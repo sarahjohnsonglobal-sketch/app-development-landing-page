@@ -1,0 +1,11 @@
+node_modules/
+.vercel
+.env
+.env.*
+test-view.html
+test.txt
+*.log
+.DS_Store
+Thumbs.db
+push.bat
+push.ps1

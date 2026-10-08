@@ -1,0 +1,3868 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Development Company | Custom Mobile & Web Apps | AlgoFort</title>
+    <meta name="title" content="App Development Company | Custom Mobile & Web Apps | AlgoFort">
+    <meta name="description"
+        content="Build powerful mobile and web applications with AlgoFort. We provide custom app development, UI/UX design, testing, deployment, and ongoing support.">
+    <meta name="keywords"
+        content="App Development Company, Mobile App Development, Custom App Development, iOS App Development, Android App Development, Web Application Development, Cross Platform App Development">
+    <meta name="author" content="AlgoFort">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.algofort.com/app-development/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.algofort.com/app-development/">
+    <meta property="og:title" content="App Development Company | Custom Mobile & Web Apps | AlgoFort">
+    <meta property="og:description"
+        content="Build powerful mobile and web applications with AlgoFort. We provide custom app development, UI/UX design, testing, deployment, and ongoing support.">
+    <meta property="og:image" content="./images/algofort.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.algofort.com/app-development/">
+    <meta property="twitter:title" content="App Development Company | Custom Mobile & Web Apps | AlgoFort">
+    <meta property="twitter:description"
+        content="Build powerful mobile and web applications with AlgoFort. We provide custom app development, UI/UX design, testing, deployment, and ongoing support.">
+    <meta property="twitter:image" content="./images/algofort.jpg">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <script src="./assets/app.js" defer></script>
+    <link rel="stylesheet" href="./assets/app.css">
+    <style>
+        /* Algofort Core UI Overrides & Fixes */
+
+        /* Header logo: keep PNG aspect (img width:100% would distort it) */
+        header img[src*="algofort-logo"] {
+            object-fit: contain !important;
+        }
+
+        /* Marquee: seamless infinite loop (both directions) */
+        @keyframes marquee-left {
+            0% {
+                transform: translate(0);
+            }
+
+            100% {
+                transform: translate(-50%);
+            }
+        }
+
+        @keyframes marquee-right {
+            0% {
+                transform: translate(-50%);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .animate-marquee-left,
+        .animate-marquee-right {
+            animation-iteration-count: infinite;
+        }
+
+        .animate-marquee-left>div,
+        .animate-marquee-right>div {
+            padding-right: 20px;
+        }
+
+        /* Marquee cards: softer box-shadow */
+        .animate-marquee-left .shadow-xl,
+        .animate-marquee-right .shadow-xl {
+            box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.16), 0 4px 8px -6px rgba(0, 0, 0, 0.08);
+        }
+
+        .animate-marquee-left img.shadow-lg,
+        .animate-marquee-right img.shadow-lg {
+            box-shadow: 0 8px 16px -10px rgba(0, 0, 0, 0.14);
+        }
+
+        /* Uniform section badges */
+        .sec-badge {
+            display: inline-block;
+            padding: 7px 22px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #1f2937;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        /* Uniform section spacing (64px mobile / 112px desktop) */
+        #capabilities {
+            padding: 64px 0;
+        }
+
+        #technologies {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        #testimonials {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        #faq {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        @media (min-width: 1024px) {
+            #capabilities {
+                padding: 112px 0;
+            }
+
+            #technologies {
+                padding-top: 112px;
+                padding-bottom: 112px;
+            }
+
+            #testimonials {
+                padding-top: 112px;
+                padding-bottom: 112px;
+            }
+
+            #faq {
+                padding-top: 112px;
+                padding-bottom: 112px;
+            }
+        }
+
+        .portfolio-orange-btn {
+            background-color: #f97316 !important;
+            color: #ffffff !important;
+            box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.4) !important;
+        }
+
+        .portfolio-orange-btn:hover {
+            background-color: #ea580c !important;
+            transform: scale(0.97);
+        }
+
+        .card-arrow-btn {
+            background-color: #f1f3f5 !important;
+            color: #0f172a !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .group:hover .card-arrow-btn {
+            background-color: #f97316 !important;
+            color: #ffffff !important;
+            transform: scale(1.08) !important;
+        }
+
+        /* Tech Sandbox Active Tab */
+        .tech-tab.active {
+            background: rgba(249, 115, 22, 0.15) !important;
+            color: #f97316 !important;
+            border-color: rgba(249, 115, 22, 0.4) !important;
+        }
+
+        .tech-badge-item {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .tech-badge-item:hover,
+        .tech-badge-item.active {
+            border-color: rgba(249, 115, 22, 0.5) !important;
+            background: rgba(30, 41, 59, 0.9) !important;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="bg-body-bg">
+    <!-- Navbar -->
+    <header>
+        <div class="nav-sticky navbar fixed inset-x-0 top-0 z-120 w-full">
+            <div class="container lg:py-7.5 md:py-5 py-3.5">
+                <div
+                    class="flex items-center lg:justify-center justify-between w-full lg:bg-transparent bg-white md:rounded-2xl rounded-lg ">
+                    <div class="lg:p-4 md:py-4 py-1.5 px-3 bg-white min-w-[175px] flex rounded-[20px] lg:shadow-lg">
+                        <a href="index.html">
+                            <img src="./images/algofort-logo.png" alt="AlgoFort Logo" class="md:h-8 h-7.5">
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-2.5 transition-all duration-500 ease-in-out in-[.nav-sticky-on]:w-2.5 lg:flex hidden">
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="p-1.5 bg-white rounded-[20px] whitespace-nowrap lg:shadow-lg lg:block hidden">
+                            <ul id="navbar" class="flex items-center">
+                                <li>
+                                    <a href="#services"
+                                        class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-6">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#capabilities"
+                                        class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-5">Capabilities</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio"
+                                        class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-5">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#technologies"
+                                        class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-5">Technologies</a>
+                                </li>
+                                <li>
+                                    <a href="#process"
+                                        class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-5">Process</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials"
+                                        class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-5">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#faq"
+                                        class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-5">FAQ</a>
+                                </li>
+
+                                <!-- Dropdown -->
+                                <li class="hidden">
+                                    <button id="hs-dropdown-hover-event" type="button"
+                                        class="hs-dropdown-toggle flex items-center gap-1 justify-center text-sm hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none "
+                                        aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                        Pages
+                                        <i class="iconify lucide--chevron-down size-4"></i>
+                                    </button>
+
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-44 bg-white rounded-xl mt-2 after:h-4 after:absolute after:-bottom-4 after:inset-s-0 after:w-full before:h-4 before:absolute before:-top-4 before:inset-s-0 before:w-full"
+                                        role="menu" aria-orientation="vertical"
+                                        aria-labelledby="hs-dropdown-hover-event">
+                                        <div class="p-2.5 space-y-0.5">
+                                            <a href="index.html"
+                                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Home
+                                            </a>
+                                            <a href="#process"
+                                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">Development
+                                                Process</a>
+                                            <a href="#portfolio"
+                                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">Portfolio</a>
+                                            <a href="#contact"
+                                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Contact
+                                            </a>
+                                            <a href="#faq"
+                                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">FAQs</a>
+                                            <a href="privacy-policy.html"
+                                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Privacy Policy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full h-2.5 transition-all duration-500 ease-in-out in-[.nav-sticky-on]:w-2.5 lg:flex hidden">
+                    </div>
+
+                    <div class="flex items-center gap-1.25 p-1.5 bg-white rounded-[20px] shadow-lg lg:shadow-lg">
+                        <a href="https://www.apple.com/in/app-store/" target="_blank" aria-label="App Store"
+                            class="relative flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300 group">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <!-- Default Icon -->
+                                <img src="./images/icons/app-store.svg" alt="Icon"
+                                    class="md:size-6 size-4.5 transition-transform duration-300 group-hover:-translate-y-6">
+
+                                <!-- Hover Icon -->
+                                <img src="./images/icons/app-store.svg" alt="Icon"
+                                    class="absolute md:size-6 size-4.5 translate-y-6 transition-transform duration-300 group-hover:translate-y-0">
+                            </div>
+                        </a>
+
+                        <a href="https://play.google.com/store/games?device=windows" target="_blank"
+                            aria-label="App Store"
+                            class="relative flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300 group">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <!-- Default Icon -->
+                                <img src="./images/icons/play-store.svg" alt="Icon"
+                                    class="md:size-6 size-4.5 transition-transform duration-300 group-hover:-translate-y-6">
+
+                                <!-- Hover Icon -->
+                                <img src="./images/icons/play-store.svg" alt="Icon"
+                                    class="absolute md:size-6 size-4.5 translate-y-6 transition-transform duration-300 group-hover:translate-y-0">
+                            </div>
+                        </a>
+
+                        <a href="#contact"
+                            class="group relative hidden sm:inline-flex items-center justify-center overflow-hidden rounded-2xl bg-black text-white py-3 px-5 text-sm font-semibold transition-all duration-300 hover:scale-95">
+                            <span class="relative block overflow-hidden">
+                                <span
+                                    class="block transition-transform duration-300 group-hover:-translate-y-full">Start
+                                    Project</span>
+                                <span
+                                    class="absolute left-0 top-full block transition-transform duration-300 group-hover:-translate-y-full">Start
+                                    Project</span>
+                            </span>
+                        </a>
+
+                        <div class="flex items-center lg:hidden">
+                            <button type="button" aria-haspopup="dialog" aria-expanded="false"
+                                aria-controls="mobile-menu" data-hs-overlay="#mobile-menu"
+                                class="flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300">
+                                <i class="iconify tabler--align-right size-6"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hs-overlay hs-overlay-open:trandefault-y-0 md:hs-overlay-open:top-24 hs-overlay-open:top-18 hs-overlay-open:opacity-100 [--body-scroll:true] opacity-0 fixed inset-x-0 top-0 z-110 h-50 md:mx-5 mx-4 rounded-lg -trandefault-y-full transform overflow-hidden bg-white shadow-xl transition-all duration-300 hidden"
+            role="dialog" tabindex="-1" aria-labelledby="mobile-menu-label">
+            <div class="flex max-h-50 flex-col overflow-y-auto p-3">
+                <a href="#services"
+                    class="group flex items-center p-2 text-base font-medium text-default-800 rounded-xl hover:bg-default-100 transition-all">Services</a>
+                <a href="#capabilities"
+                    class="group flex items-center p-2 text-base font-medium text-default-800 rounded-xl hover:bg-default-100 transition-all">Capabilities</a>
+                <a href="#portfolio"
+                    class="group flex items-center p-2 text-base font-medium text-default-800 rounded-xl hover:bg-default-100 transition-all">Portfolio</a>
+                <a href="#technologies"
+                    class="group flex items-center p-2 text-base font-medium text-default-800 rounded-xl hover:bg-default-100 transition-all">Technologies</a>
+                <a href="#process"
+                    class="group flex items-center p-2 text-base font-medium text-default-800 rounded-xl hover:bg-default-100 transition-all">Process</a>
+                <a href="#testimonials"
+                    class="group flex items-center p-2 text-base font-medium text-default-800 rounded-xl hover:bg-default-100 transition-all">Testimonials</a>
+                <a href="#faq"
+                    class="group flex items-center p-2 text-base font-medium text-default-800 rounded-xl hover:bg-default-100 transition-all">FAQ</a>
+                <a href="#contact"
+                    class="flex items-center justify-center p-3 text-base font-semibold text-white bg-black rounded-xl hover:bg-neutral-800 mt-2 transition-all">Start
+                    Project</a>
+
+                <div class="hidden">
+
+                    <a href="#portfolio"
+                        class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">Portfolio</a>
+
+                    <a href="contact.html"
+                        class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                        Features
+                    </a>
+
+                    <div class="hs-accordion">
+                        <button type="button"
+                            class="hs-accordion-toggle group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary"
+                            aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                            Pages
+                            <i class="iconify tabler--chevron-down ms-4"></i>
+                        </button>
+
+                        <div class="hs-accordion-content hidden w-full overflow-hidden ps-5 pb-4 transition-[height]">
+                            <a href="index.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                Home
+                            </a>
+                            <a href="about.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                About
+                            </a>
+                            <a href="pricing.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                Pricing
+                            </a>
+                            <a href="contact.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                Contact
+                            </a>
+                            <a href="waitlist.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                Waitlist
+                            </a>
+                            <a href="download.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                Download
+                            </a>
+                            <a href="faqs.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                FAQs
+                            </a>
+                            <a href="privacy-policy.html"
+                                class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                Privacy Policy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- hero-section -->
+    <section id="hero"
+        class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black lg:pt-52 md:pt-40 pt-34">
+        <!-- Background Image -->
+        <img src="./images/hero-image.jpg" alt="Hero Background"
+            class="absolute inset-0 h-full w-full object-cover object-center" />
+
+        <div class="container relative z-10 mx-auto px-4">
+            <div class="flex flex-col items-center text-center">
+                <!-- Badge -->
+                <div
+                    class="lg:w-70 mb-4.5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 p-1.5 pe-2 backdrop-blur-md">
+                    <span
+                        class="rounded-full bg-[#F47A1F] px-2.5 py-px text-xs font-semibold tracking-wider text-white uppercase">ALGOFORT</span><span
+                        class="text-sm font-medium text-white tracking-wide">APP DEVELOPMENT</span>
+                </div>
+
+                <!-- Title -->
+                <h1
+                    class="font-medium leading-tight tracking-tight text-white lg:text-[76px] md:text-5xl text-4xl lg:mb-7.5 mb-5 max-w-5xl">
+                    Build Powerful Apps That Turn Ideas Into Digital Experiences</h1>
+
+                <!-- Description -->
+                <p class="lg:mb-10 mb-6 max-w-3xl text-lg leading-relaxed text-white md:text-xl">We design and develop
+                    fast, secure, and user-friendly mobile and web applications that help businesses connect with
+                    customers, streamline operations, and grow in a digital-first world.</p>
+
+                <!-- Buttons -->
+                <div class="flex items-center justify-center md:gap-5 gap-2">
+                    <!-- Primary Button -->
+                    <a href="#contact"
+                        class="group relative overflow-hidden rounded-full bg-white md:px-8.5 px-3.5 py-3 md:py-4 md:text-lg text-sm font-medium text-black transition-all duration-300 hover:scale-95">
+                        <span class="relative block overflow-hidden">
+                            <span class="block transition-transform duration-300 group-hover:-translate-y-full">Start
+                                Your App Project</span>
+
+                            <span
+                                class="absolute left-0 top-full block transition-transform duration-300 group-hover:-translate-y-full">Start
+                                Your App Project</span>
+                        </span>
+                    </a>
+
+                    <!-- Outline Button -->
+                    <a href="#portfolio" data-toggle="video"
+                        class="group relative overflow-hidden rounded-full border border-white/20 bg-white/5 md:px-8.5 px-3.5 py-3 md:py-4 md:text-lg text-sm text-white backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:scale-95">
+                        <div class="relative flex items-center gap-3 overflow-hidden">
+                            <!-- First State -->
+                            <div
+                                class="flex items-center gap-3 transition-transform duration-300 group-hover:-translate-y-full">
+                                <i class="iconify tabler--player-play-filled text-white md:size-6 size-4"></i>
+
+                                <span class="font-medium">Explore Our Work</span>
+                            </div>
+
+                            <!-- Hover State -->
+                            <div
+                                class="absolute left-0 top-full flex items-center gap-3 transition-transform duration-300 group-hover:-translate-y-full">
+                                <i class="iconify tabler--player-play-filled text-white md:size-6 size-4"></i>
+
+                                <span class="font-medium">Explore Our Work</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Dashboard Images -->
+                <div
+                    class="relative mt-6 md:mt-16 lg:mt-20 flex lg:gap-10 md:gap-5 gap-8 w-full max-w-5xl items-start justify-center">
+                    <!-- Left Floating Card -->
+                    <img src="./images/workspace/dashboard-01.svg" alt="Dashboard"
+                        class="absolute top-8 lg:inset-s-32 md:inset-s-6 inset-s-0 lg:size-40 size-35" />
+
+                    <!-- Main Dashboard -->
+                    <img src="./images/workspace/dashboard-03.svg" alt="Dashboard"
+                        class="relative -z-20! lg:w-90 w-75 h-144 md:mt-0 mt-34" />
+
+                    <!-- Right Floating Card -->
+                    <img src="./images/workspace/dashboard-02.svg" alt="Dashboard"
+                        class="absolute md:bottom-60 top-8 lg:inset-e-14 inset-e-0 lg:w-60 w-50" />
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-body-bg absolute w-full md:h-40 h-18 bottom-0 z-20"></div>
+
+        <img src="./images/vector-01.webp" alt=""
+            class="w-full top-auto lg:h-110 md:h-100 h-70 absolute -bottom-7.5 z-20" />
+    </section>
+
+    <!-- about-section -->
+    <section id="idea-to-launch" class="relative lg:pt-6 lg:pb-50 pb-20 text-center">
+        <div class="container">
+            <!-- 1. Top Section: Title & Tags -->
+            <div class="md:mb-15">
+                <h2
+                    class="mx-auto max-w-5xl text-center md:text-5xl text-3xl font-medium leading-tight tracking-tight text-black mb-10">
+                    From idea to launch &mdash; we handle it all with
+                    <span
+                        class="relative inline-flex md:h-11 h-6.5 md:w-22.5 w-12.5 overflow-hidden rounded-full align-middle">
+                        <img src="./images/about/about-01.webp"
+                            class="absolute inset-0 h-full w-full object-cover animate-imageSwap" alt="" />
+                        <img src="./images/about/about-02.webp"
+                            class="absolute inset-0 h-full w-full object-cover animate-imageSwap2" alt="" />
+                        <img src="./images/about/about-03.webp"
+                            class="absolute inset-0 h-full w-full object-cover animate-imageSwap3" alt="" />
+                        <img src="./images/about/about-04.webp"
+                            class="absolute inset-0 h-full w-full object-cover animate-imageSwap4" alt="" />
+                    </span>
+                    world-class engineering
+                    <span class="mx-1 inline-flex align-middle">
+                        <img src="./images/icons/icon-19.svg" alt="" aria-hidden="true" class="md:size-15 size-7.5" />
+                    </span>
+                    built for business growth.
+                </h2>
+
+                <p class="lg:text-2xl md:text-xl text-base text-default-500 font-medium mb-3.5">
+                    Trusted by forward-thinking businesses and startups worldwide.
+                </p>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap justify-center gap-3.5">
+                    <span
+                        class="px-3.5 py-2 bg-default-200 rounded-full text-sm font-semibold text-default-800">#MobileApps</span>
+                    <span
+                        class="px-3.5 py-2 bg-default-200 rounded-full text-sm font-semibold text-default-800">#WebApps</span>
+                    <span
+                        class="px-3.5 py-2 bg-default-200 rounded-full text-sm font-semibold text-default-800">#CrossPlatform</span>
+                    <span
+                        class="px-3.5 py-2 bg-default-200 rounded-full text-sm font-semibold text-default-800">#CustomSolutions</span>
+                </div>
+            </div>
+
+            <!-- Main Container -->
+            <div class="relative w-full md:py-24 py-12 overflow-hidden flex flex-col items-center">
+                <!-- Side Decorations (Blurred Edges from your CSS) -->
+                <div
+                    class="absolute inset-y-0 -left-20 w-37.5 bg-body-bg blur-[20px] z-20 pointer-events-none md:block hidden">
+                </div>
+                <div
+                    class="absolute inset-y-0 -right-20 w-37.5 bg-body-bg blur-[30px] z-20 pointer-events-none md:block hidden">
+                </div>
+
+                <!-- Marquee Row 1: Left -->
+                <div class="md:mt-20 mt-10 overflow-hidden py-6">
+                    <!-- Marquee Wrapper -->
+                    <div class="flex w-max animate-marquee-left">
+                        <!-- ================= FIRST SET ================= -->
+                        <div class="flex items-center gap-5">
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-8">
+                                    <img src="./images/icons/icon-11.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">iOS &
+                                    Android Native</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="FinTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-1">
+                                    <img src="./images/icons/icon-12.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">UI/UX
+                                    Design</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="HealthTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-2">
+                                    <img src="./images/icons/icon-13.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Secure
+                                    APIs</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Logistics Dashboard UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-3">
+                                    <img src="./images/icons/icon-14.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Rapid
+                                    Deployment</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Delivery App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-7">
+                                    <img src="./images/icons/icon-15.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Cloud
+                                    Integration</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="EdTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-6">
+                                    <img src="./images/icons/icon-16.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Clean
+                                    Code</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Social App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-5">
+                                    <img src="./images/icons/icon-17.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Real-time
+                                    Sync</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Tech Stack UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-4">
+                                    <img src="./images/icons/icon-18.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">App Store
+                                    Launch</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Analytics Dashboard UI" />
+                        </div>
+
+                        <!-- ================= DUPLICATE SET ================= -->
+                        <div class="flex items-center gap-5">
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-8">
+                                    <img src="./images/icons/icon-11.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">iOS &
+                                    Android Native</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="FinTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-1">
+                                    <img src="./images/icons/icon-12.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">UI/UX
+                                    Design</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="HealthTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-2">
+                                    <img src="./images/icons/icon-13.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Secure
+                                    APIs</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Logistics Dashboard UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-3">
+                                    <img src="./images/icons/icon-14.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Rapid
+                                    Deployment</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Delivery App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-7">
+                                    <img src="./images/icons/icon-15.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Cloud
+                                    Integration</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="EdTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-6">
+                                    <img src="./images/icons/icon-16.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Clean
+                                    Code</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Social App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-5">
+                                    <img src="./images/icons/icon-17.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Real-time
+                                    Sync</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Tech Stack UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-4">
+                                    <img src="./images/icons/icon-18.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">App Store
+                                    Launch</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Analytics Dashboard UI" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marquee Row 2: Right -->
+                <div class="md:mb-20 overflow-hidden pb-6">
+                    <!-- Marquee Wrapper -->
+                    <div class="flex w-max animate-marquee-right">
+                        <!-- ================= FIRST SET ================= -->
+                        <div class="flex items-center gap-5">
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-8">
+                                    <img src="./images/icons/icon-11.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">iOS &
+                                    Android Native</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="FinTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-1">
+                                    <img src="./images/icons/icon-12.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">UI/UX
+                                    Design</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="HealthTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-2">
+                                    <img src="./images/icons/icon-13.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Secure
+                                    APIs</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Logistics Dashboard UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-3">
+                                    <img src="./images/icons/icon-14.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Rapid
+                                    Deployment</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Delivery App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-7">
+                                    <img src="./images/icons/icon-15.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Cloud
+                                    Integration</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="EdTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-6">
+                                    <img src="./images/icons/icon-16.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Clean
+                                    Code</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Social App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-5">
+                                    <img src="./images/icons/icon-17.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Real-time
+                                    Sync</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Tech Stack UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-4">
+                                    <img src="./images/icons/icon-18.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">App Store
+                                    Launch</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Analytics Dashboard UI" />
+                        </div>
+
+                        <!-- ================= DUPLICATE SET ================= -->
+                        <div class="flex items-center gap-5">
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-8">
+                                    <img src="./images/icons/icon-11.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">iOS &
+                                    Android Native</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="FinTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-1">
+                                    <img src="./images/icons/icon-12.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">UI/UX
+                                    Design</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="HealthTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-2">
+                                    <img src="./images/icons/icon-13.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Secure
+                                    APIs</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Logistics Dashboard UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-3">
+                                    <img src="./images/icons/icon-14.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Rapid
+                                    Deployment</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Delivery App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-7">
+                                    <img src="./images/icons/icon-15.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Cloud
+                                    Integration</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="EdTech App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-6">
+                                    <img src="./images/icons/icon-16.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Clean
+                                    Code</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Social App UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-5">
+                                    <img src="./images/icons/icon-17.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">Real-time
+                                    Sync</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Tech Stack UI" />
+
+                            <!-- Card -->
+                            <div
+                                class="inline-flex md:size-37.5 size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl">
+                                <div
+                                    class="flex md:size-12.5 size-7.5 shrink-0 items-center justify-center rounded-full bg-primary-4">
+                                    <img src="./images/icons/icon-18.svg" class="md:size-6 size-3.5" alt="" />
+                                </div>
+
+                                <span class="md:text-base text-sm text-center font-medium text-default-800">App Store
+                                    Launch</span>
+                            </div>
+
+                            <!-- Image -->
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
+                                class="md:size-37.5 size-32.5 rounded-3xl object-cover shadow-lg bg-neutral-100 border border-black/5"
+                                alt="Analytics Dashboard UI" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Centered Phone Overlay -->
+                <div class="absolute inset-0 z-30 flex justify-center items-center pointer-events-none">
+                    <img src="./images/event/phone-image.png" class="md:h-175 h-88 md:w-85 w-42" alt="App Interface" />
+                </div>
+            </div>
+
+            <!-- 3. Bottom Section: Description & Buttons -->
+            <div class="mx-auto px-6 md:mt-12 mt-4 flex flex-col gap-y-5 items-center">
+                <!-- Rating Badge -->
+                <div
+                    class="flex items-center gap-2 border border-default-200 bg-white md:px-5 px-2.5 py-2 rounded-full">
+                    <i class="iconify tabler--star-filled size-3.5 text-primary-1"></i>
+                    <p class="text-sm text-default-500 font-medium">
+                        <span class="text-black font-medium"><span class="text-black font-semibold">10+ Years</span> of
+                            Proven App Development Experience
+                    </p>
+                </div>
+
+                <p class="text-default-700 md:text-lg text-base leading-normal mb-2.5 md:w-xl w-xs">
+                    Every business has unique goals. We build scalable iOS, Android, and web platforms with clean code,
+                    modern architectures, and delightful user experiences.
+                </p>
+
+                <!-- Buttons with Sliding Effect -->
+                <div class="flex flex-col md:flex-row gap-5 w-full justify-center">
+                    <!-- Apple Button -->
+                    <a href="#"
+                        class="group relative px-8.5 overflow-hidden rounded-full bg-black shadow-xl! text-white inline-flex items-center justify-center hover:scale-95 transition-all duration-300">
+                        <div
+                            class="relative inline-flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
+                            <div class="flex items-center gap-3 h-14">
+                                <img src="./images/icons/app-store-light.svg" class="w-5 h-5" alt="" />
+                                <span class="font-normal">Start Your Project</span>
+                            </div>
+                            <div class="flex items-center gap-3 h-14 absolute top-full">
+                                <img src="./images/icons/app-store-light.svg" class="w-5 h-5" alt="" />
+                                <span class="font-normal">Start Your Project</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Android Button -->
+                    <a href="#"
+                        class="group relative px-8.5 overflow-hidden rounded-full bg-default-200 text-black inline-flex items-center justify-center hover:scale-95 transition-all duration-300">
+                        <div
+                            class="relative flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
+                            <div class="flex items-center gap-2.5 h-14">
+                                <img src="./images/icons/play-store.svg" class="w-5 h-5" alt="" />
+                                <span class="font-normal">Schedule Consultation</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 h-14 absolute top-full">
+                                <img src="./images/icons/play-store.svg" class="w-5 h-5" alt="" />
+                                <span class="font-normal">Schedule Consultation</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative lg:block hidden">
+            <img src="./images/locations/cloud-04.webp" loading="lazy" alt="Decoration Image"
+                class="absolute inset-s-0 inset-e-0 w-full object-cover -bottom-100 h-148 -z-5" />
+            <img src="./images/locations/cloud-02.webp" loading="lazy" alt="Decoration Image"
+                class="absolute inset-e-0 -bottom-38 h-75 -z-5" />
+            <img src="./images/locations/cloud-01.webp" loading="lazy" alt="Decoration Image"
+                class="absolute inset-s-0 -bottom-48 h-75 -z-5" />
+        </div>
+    </section>
+
+    <!-- =========================================
+         3. WHAT WE DO (Exact Studio Services from Reference)
+    ========================================= -->
+    <section class="studio-services" id="services"
+        style="background-color: #090a0c !important; color: #ffffff !important; position: relative !important; z-index: 20 !important;">
+        <div class="studio-page-inset">
+
+            <!-- Heading -->
+            <div class="studio-services-heading">
+
+                <p class="studio-label">// What we do</p>
+
+                <h2 class="studio-services-title">
+                    <span class="studio-services-title-line">
+                        <span>We think out of the box</span>
+                    </span>
+
+                    <span class="studio-services-title-line">
+                        <span>for tailor-made service</span>
+                    </span>
+                </h2>
+
+            </div>
+
+
+            <!-- Services Body -->
+            <div class="studio-services-body">
+
+                <p class="studio-services-description">
+                    We help businesses create strong, memorable applications through
+                    cutting-edge strategy, design, and engineering. From architecture to
+                    deployment, we craft everything your digital product needs to look,
+                    feel and perform its best.
+                </p>
+
+
+                <!-- Services List -->
+                <ol class="studio-service-list">
+
+                    <!-- 01 -->
+                    <li>
+                        <button class="studio-service-row" type="button">
+
+                            <span class="studio-service-number">01</span>
+
+                            <span class="studio-service-name">
+                                Native iOS &amp; Android Apps
+                            </span>
+
+                            <span class="studio-service-preview">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80"
+                                    alt="Native iOS &amp; Android Apps" />
+                            </span>
+
+                        </button>
+                    </li>
+
+
+                    <!-- 02 -->
+                    <li>
+                        <button class="studio-service-row" type="button">
+
+                            <span class="studio-service-number">02</span>
+
+                            <span class="studio-service-name">
+                                Cross-Platform (Flutter &amp; React Native)
+                            </span>
+
+                            <span class="studio-service-preview">
+                                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=600&q=80"
+                                    alt="Cross-Platform Development" />
+                            </span>
+
+                        </button>
+                    </li>
+
+
+                    <!-- 03 -->
+                    <li>
+                        <button class="studio-service-row" type="button">
+
+                            <span class="studio-service-number">03</span>
+
+                            <span class="studio-service-name">
+                                Cloud Microservices &amp; APIs
+                            </span>
+
+                            <span class="studio-service-preview">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80"
+                                    alt="Cloud Microservices &amp; APIs" />
+                            </span>
+
+                        </button>
+                    </li>
+
+
+                    <!-- 04 -->
+                    <li>
+                        <button class="studio-service-row" type="button">
+
+                            <span class="studio-service-number">04</span>
+
+                            <span class="studio-service-name">
+                                UI/UX Design &amp; Interactive Prototypes
+                            </span>
+
+                            <span class="studio-service-preview">
+                                <img src="./images/workspace/mobile-image.png" alt="UI/UX Design &amp; Prototyping" />
+                            </span>
+
+                        </button>
+                    </li>
+
+
+                    <!-- 05 -->
+                    <li>
+                        <button class="studio-service-row" type="button">
+
+                            <span class="studio-service-number">05</span>
+
+                            <span class="studio-service-name">
+                                Enterprise App Modernization
+                            </span>
+
+                            <span class="studio-service-preview">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+                                    alt="Enterprise App Modernization" />
+                            </span>
+
+                        </button>
+                    </li>
+
+
+                    <!-- 06 -->
+                    <li>
+                        <button class="studio-service-row" type="button">
+
+                            <span class="studio-service-number">06</span>
+
+                            <span class="studio-service-name">
+                                AI &amp; Smart App Integration
+                            </span>
+
+                            <span class="studio-service-preview">
+                                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80"
+                                    alt="AI &amp; Smart App Integration" />
+                            </span>
+
+                        </button>
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        /* =========================================
+       STUDIO SERVICES (What We Do - Exact Reference CSS)
+    ========================================= */
+
+        .studio-services {
+            width: 100%;
+            background: #090a0c !important;
+            color: #ffffff !important;
+            padding: 112px 0;
+            overflow: hidden;
+            position: relative;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .studio-page-inset {
+            width: min(1400px, calc(100% - 80px));
+            margin: 0 auto;
+        }
+
+        /* Heading */
+        .studio-services-heading {
+            margin-bottom: 90px;
+        }
+
+        .studio-label {
+            margin: 0 0 25px;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #ff6a00;
+        }
+
+        .studio-services-title {
+            margin: 0;
+            max-width: 1100px;
+            font-family: inherit;
+            font-size: clamp(48px, 6.5vw, 100px);
+            font-weight: 500;
+            line-height: 0.95;
+            letter-spacing: -0.05em;
+            color: #ffffff;
+        }
+
+        .studio-services-title-line {
+            display: block;
+            overflow: hidden;
+        }
+
+        .studio-services-title-line>span {
+            display: block;
+        }
+
+        /* Body */
+        .studio-services-body {
+            display: grid;
+            grid-template-columns: minmax(250px, 0.7fr) minmax(500px, 1.3fr);
+            gap: 90px;
+            align-items: start;
+        }
+
+        .studio-services-description {
+            max-width: 380px;
+            margin: 5px 0 0;
+            font-family: inherit;
+            font-size: 17px;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            color: #9ca3af;
+        }
+
+        /* Services List */
+        .studio-service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .studio-service-list li {
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        /* Service Row */
+        .studio-service-row {
+            position: relative;
+            width: 100%;
+            min-height: 105px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            border: 0;
+            background: transparent;
+            color: #ffffff;
+            cursor: pointer;
+            text-align: left;
+            font-family: inherit;
+            outline: none;
+        }
+
+        /* Number */
+        .studio-service-number {
+            width: 70px;
+            flex-shrink: 0;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #888888;
+            opacity: 0.65;
+            transition: opacity 0.3s ease, color 0.3s ease;
+        }
+
+        /* Service Name */
+        .studio-service-name {
+            font-size: clamp(24px, 2.8vw, 42px);
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: -0.035em;
+            color: #ffffff;
+            transition: transform 0.5s cubic-bezier(.16, 1, .3, 1), opacity 0.4s ease, color 0.3s ease;
+        }
+
+        /* Hover Row */
+        .studio-service-row:hover .studio-service-name {
+            transform: translateX(18px);
+            color: #ffffff;
+        }
+
+        .studio-service-row:hover .studio-service-number {
+            opacity: 1;
+            color: #ff6a00;
+        }
+
+        /* Image Preview */
+        .studio-service-preview {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 280px;
+            height: 180px;
+            pointer-events: none;
+            z-index: 99999;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            transform: translate(-50%, -50%) scale(0);
+            transform-origin: center center;
+            border-radius: 12px;
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.2);
+            will-change: transform, left, top, opacity;
+        }
+
+        .studio-service-preview img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #111;
+        }
+
+        /* Mobile & Tablet */
+        @media (max-width: 900px) {
+            .studio-services {
+                padding: 64px 0;
+            }
+
+            .studio-page-inset {
+                width: calc(100% - 40px);
+            }
+
+            .studio-services-heading {
+                margin-bottom: 60px;
+            }
+
+            .studio-services-body {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .studio-services-description {
+                max-width: 600px;
+            }
+
+            .studio-service-row {
+                min-height: 80px;
+            }
+
+            .studio-service-number {
+                width: 50px;
+            }
+
+            .studio-service-preview {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .studio-services {
+                padding: 64px 0;
+            }
+
+            .studio-page-inset {
+                width: calc(100% - 30px);
+            }
+
+            .studio-services-title {
+                font-size: 42px;
+            }
+
+            .studio-services-description {
+                font-size: 15px;
+            }
+
+            .studio-service-name {
+                font-size: 24px;
+            }
+
+            .studio-service-row {
+                min-height: 72px;
+            }
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script>
+        (function () {
+            function initStudioServices() {
+                const serviceRows = document.querySelectorAll(".studio-service-row");
+                if (!serviceRows.length) return;
+
+                let activePreview = null;
+                const allPreviews = Array.prototype.slice.call(document.querySelectorAll(".studio-service-preview"));
+
+                function hideInstant(preview) {
+                    if (typeof gsap !== "undefined") {
+                        gsap.killTweensOf(preview);
+                        gsap.set(preview, { autoAlpha: 0, scale: 0 });
+                    } else {
+                        preview.style.opacity = "0";
+                        preview.style.visibility = "hidden";
+                        preview.style.transform = "translate(-50%, -50%) scale(0)";
+                    }
+                }
+
+                function hideSmooth(preview) {
+                    if (typeof gsap !== "undefined") {
+                        gsap.killTweensOf(preview);
+                        gsap.to(preview, {
+                            autoAlpha: 0,
+                            scale: 0,
+                            duration: 0.25,
+                            ease: "power2.out"
+                        });
+                    } else {
+                        preview.style.opacity = "0";
+                        preview.style.visibility = "hidden";
+                        preview.style.transform = "translate(-50%, -50%) scale(0)";
+                    }
+                }
+
+                window.addEventListener("scroll", function () {
+                    allPreviews.forEach(function (p) { hideInstant(p); });
+                    activePreview = null;
+                }, { passive: true });
+
+                serviceRows.forEach(function (row) {
+                    const preview = row.querySelector(".studio-service-preview");
+                    if (!preview) return;
+
+                    row.addEventListener("mouseenter", function (event) {
+                        activePreview = preview;
+                        allPreviews.forEach(function (p) {
+                            if (p !== preview) hideInstant(p);
+                        });
+                        if (typeof gsap !== "undefined") {
+                            gsap.killTweensOf(preview);
+                            gsap.set(preview, {
+                                left: event.clientX,
+                                top: event.clientY
+                            });
+                            gsap.to(preview, {
+                                autoAlpha: 1,
+                                scale: 1,
+                                duration: 0.5,
+                                ease: "power3.out"
+                            });
+                        } else {
+                            preview.style.left = event.clientX + "px";
+                            preview.style.top = event.clientY + "px";
+                            preview.style.opacity = "1";
+                            preview.style.visibility = "visible";
+                            preview.style.transform = "translate(-50%, -50%) scale(1)";
+                        }
+                    });
+
+                    row.addEventListener("mousemove", function (event) {
+                        if (typeof gsap !== "undefined") {
+                            gsap.to(preview, {
+                                left: event.clientX,
+                                top: event.clientY,
+                                duration: 0.65,
+                                ease: "power3.out"
+                            });
+                        } else {
+                            preview.style.left = event.clientX + "px";
+                            preview.style.top = event.clientY + "px";
+                        }
+                    });
+
+                    row.addEventListener("mouseleave", function () {
+                        if (activePreview === preview) activePreview = null;
+                        hideSmooth(preview);
+                    });
+                });
+
+                if (typeof gsap !== "undefined") {
+                    gsap.from(".studio-services-title-line > span", {
+                        yPercent: 110,
+                        duration: 1.2,
+                        stagger: 0.12,
+                        ease: "power4.out"
+                    });
+                }
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initStudioServices);
+            } else {
+                initStudioServices();
+            }
+        })();
+    </script>
+    <!-- tabs-section -->
+    <section class="relative" id="capabilities">
+        <!-- Dot Grid Pattern Overlay -->
+        <div class="absolute inset-0 z-0 pointer-events-none opacity-60" style="
+          background-image: radial-gradient(#e5e7eb 1.5px, transparent 1.5px);
+          background-size: 24px 24px;
+        "></div>
+
+        <div class="container bg-white relative z-10 text-center lg:p-25 p-8.5 lg:mx-auto rounded-2xl">
+            <!-- Top Badge -->
+            <span class="sec-badge mb-3.5">APP FEATURES & CAPABILITIES</span>
+
+            <!-- Heading -->
+            <h2
+                class="md:mb-12.5 mb-8 text-2xl md:text-4xl lg:text-5xl font-medium tracking-normal text-default-900 leading-[1.1]">
+                High-Performance Capabilities Built Into Every App
+            </h2>
+
+            <!-- Preline Tabs Navigation -->
+            <nav class="flex flex-wrap justify-center md:gap-5 gap-2.5 mb-7.5" aria-label="Tabs" role="tablist">
+                <!-- Tab 1: Professionals -->
+                <button type="button"
+                    class="hs-tab-active:border-default-800 hs-tab-active:bg-default-100 hs-tab-active:text-default-900 py-2.5 px-5 inline-flex items-center gap-x-2.5 bg-default-100 border border-default-200 md:text-lg text-base font-medium text-default-500 rounded-xl hover:bg-default-100 transition-all active"
+                    id="tabs-item-1" data-hs-tab="#tabs-1" aria-controls="tabs-1" role="tab">
+                    <i class="iconify lucide--sparkles"></i> User-Centric Design
+                </button>
+
+                <!-- Tab 2: Students -->
+                <button type="button"
+                    class="hs-tab-active:border-default-800 hs-tab-active:bg-default-100 hs-tab-active:text-default-900 py-2.5 px-5 inline-flex items-center gap-x-2.5 bg-default-100 border border-default-200 md:text-lg text-base font-medium text-default-500 rounded-xl hover:bg-default-100 transition-all"
+                    id="tabs-item-2" data-hs-tab="#tabs-2" aria-controls="tabs-2" role="tab">
+                    <i class="iconify lucide--zap"></i> High Performance
+                </button>
+
+                <!-- Tab 3: Remote Workers -->
+                <button type="button"
+                    class="hs-tab-active:border-default-800 hs-tab-active:bg-default-100 hs-tab-active:text-default-900 py-2.5 px-5 inline-flex items-center gap-x-2.5 bg-default-100 border border-default-200 md:text-lg text-base font-medium text-default-500 rounded-xl hover:bg-default-100 transition-all"
+                    id="tabs-item-3" data-hs-tab="#tabs-3" aria-controls="tabs-3" role="tab">
+                    <i class="iconify lucide--cpu"></i> Scalable Technology
+                </button>
+
+                <!-- Tab 4: Busy Parents -->
+                <button type="button"
+                    class="hs-tab-active:border-default-800 hs-tab-active:bg-default-100 hs-tab-active:text-default-900 py-2.5 px-5 inline-flex items-center gap-x-2.5 bg-default-100 border border-default-200 md:text-lg text-base font-medium text-default-500 rounded-xl hover:bg-default-100 transition-all"
+                    id="tabs-item-4" data-hs-tab="#tabs-4" aria-controls="tabs-4" role="tab">
+                    <i class="iconify lucide--layers"></i> End-to-End Dev
+                </button>
+            </nav>
+
+            <!-- Tab Content Panes -->
+            <div class="mt-8 relative max-w-5xl mx-auto">
+                <!-- Tab 1: Professionals -->
+                <div id="tabs-1" role="tabpanel" aria-labelledby="tabs-item-1" class="transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl shadow-default-200/50"
+                        style="background: #0b1120;">
+                        <img src="./images/capabilities/cap-01.jpg" class="w-full lg:h-138 h-92 object-cover"
+                            alt="User-centric fintech app interface" />
+                        <!-- Glassmorphism Card Overlay -->
+                        <div
+                            class="absolute lg:bottom-8 md:bottom-4 bottom-2 right-2 lg:right-8 md:right-4 bg-default-900/60 backdrop-blur-md lg:p-7.5 md:p-5 p-3.5 rounded-3xl border border-white/10 md:w-100 w-70 text-left">
+                            <p class="text-default-300 md:text-lg text-sm mb-7.5 tracking-normal font-medium">
+                                We create simple and intuitive interfaces that make every interaction feel natural and
+                                keep users engaged.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <h3 class="md:text-4xl text-2xl font-bold text-white leading-none">
+                                    14
+                                </h3>
+                                <p class="text-default-400 text-sm font-medium tracking-tighter">
+                                    User Satisfaction Score
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Students -->
+                <div id="tabs-2" class="hidden" role="tabpanel" aria-labelledby="tabs-item-2">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl shadow-default-200/50"
+                        style="background: #0b1120;">
+                        <img src="./images/capabilities/cap-02.jpg" class="w-full lg:h-138 h-92 object-cover"
+                            alt="High-performance delivery app" />
+                        <div
+                            class="absolute lg:bottom-8 md:bottom-4 bottom-2 right-2 lg:right-8 md:right-4 bg-default-900/60 backdrop-blur-md lg:p-7.5 md:p-5 p-3.5 rounded-3xl border border-white/10 md:w-100 w-70 text-left">
+                            <p class="text-default-300 md:text-lg text-sm mb-7.5 tracking-normal font-medium">
+                                Fast-loading, responsive, and reliable applications built for real-world users and
+                                unpredictable network conditions.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <h3 class="md:text-4xl text-2xl font-bold text-white leading-none">
+                                    12
+                                </h3>
+                                <p class="text-default-400 text-sm font-medium tracking-tighter">
+                                    Average Response Speed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Remote Workers -->
+                <div id="tabs-3" class="hidden" role="tabpanel" aria-labelledby="tabs-item-3">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl shadow-default-200/50"
+                        style="background: #0b1120;">
+                        <img src="./images/capabilities/cap-03.jpg" class="w-full lg:h-138 h-92 object-cover"
+                            alt="Scalable logistics management dashboard" />
+                        <div
+                            class="absolute lg:bottom-8 md:bottom-4 bottom-2 right-2 lg:right-8 md:right-4 bg-default-900/60 backdrop-blur-md lg:p-7.5 md:p-5 p-3.5 rounded-3xl border border-white/10 md:w-100 w-70 text-left">
+                            <p class="text-default-300 md:text-lg text-sm mb-7.5 tracking-normal font-medium">
+                                Our solutions are built to grow with your business and smoothly handle increasing users,
+                                transactions, and data.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <h3 class="md:text-4xl text-2xl font-bold text-white leading-none">
+                                    40
+                                </h3>
+                                <p class="text-default-400 text-sm font-medium tracking-tighter">
+                                    Scalable Concurrent Users
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Busy Parents -->
+                <div id="tabs-4" class="hidden" role="tabpanel" aria-labelledby="tabs-item-4">
+                    <div class="relative overflow-hidden rounded-2xl shadow-2xl shadow-default-200/50"
+                        style="background: #0b1120;">
+                        <img src="./images/capabilities/cap-04.jpg" class="w-full lg:h-138 h-92 object-cover"
+                            alt="End-to-end health app platform" />
+                        <!-- Glassmorphism Card Overlay -->
+                        <div
+                            class="absolute lg:bottom-8 md:bottom-4 bottom-2 right-2 lg:right-8 md:right-4 bg-default-900/60 backdrop-blur-md lg:p-7.5 md:p-5 p-3.5 rounded-3xl border border-white/10 md:w-100 w-70 text-left">
+                            <p class="text-default-300 md:text-lg text-sm mb-7.5 tracking-normal font-medium">
+                                From initial idea and UI/UX design to development, testing, deployment, and long-term
+                                support — we handle it all.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <h3 class="md:text-4xl text-2xl font-bold text-white leading-none">
+                                    87%
+                                </h3>
+                                <p class="text-default-400 text-sm font-medium tracking-tighter">
+                                    End-to-End Delivery Rate
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Rhythm Badges -->
+            <div class="md:mt-12.5 mt-6">
+                <p class="text-default-800 text-sm mb-2.5 font-medium">
+                    Guaranteed Standards in Every Project
+                </p>
+                <div class="flex flex-wrap justify-center md:gap-6.5 gap-2.5">
+                    <span class="text-sm font-medium transition-colors text-default-900">#Secure & Reliable</span>
+                    <span class="text-sm font-medium transition-colors text-default-900">#Long-Term Support</span>
+                    <span class="text-sm font-medium transition-colors text-default-900">#Agile Sprints</span>
+                    <span class="text-sm font-medium transition-colors text-default-900">#Clean Code</span>
+                    <span class="text-sm font-medium transition-colors text-default-900">#API-First</span>
+                    <span class="text-sm font-medium transition-colors text-default-900">#Cloud Native</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. REAL PROJECTS / PORTFOLIO -->
+    <style>
+        #portfolio {
+            background-color: #faf7f2;
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        #portfolio .pf-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        @media (min-width: 1024px) {
+            #portfolio .pf-container {
+                padding: 0 32px;
+            }
+
+            #portfolio {
+                padding-top: 112px;
+                padding-bottom: 112px;
+            }
+        }
+
+        #portfolio .pf-header {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+
+        @media (min-width: 1024px) {
+            #portfolio .pf-header {
+                grid-template-columns: 5fr 7fr;
+                gap: 48px;
+                margin-bottom: 64px;
+            }
+        }
+
+        #portfolio .pf-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 7px 22px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 9999px;
+            margin-bottom: 32px;
+            align-self: flex-start;
+        }
+
+        #portfolio .pf-badge-text {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #1f2937;
+        }
+
+        #portfolio .pf-desc {
+            font-size: 16px;
+            line-height: 1.625;
+            color: #737373;
+            max-width: 384px;
+            margin: 0;
+        }
+
+        @media (min-width: 768px) {
+            #portfolio .pf-desc {
+                font-size: 18px;
+            }
+        }
+
+        #portfolio .pf-title {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            color: #171717;
+            margin: 0;
+        }
+
+        @media (min-width: 640px) {
+            #portfolio .pf-title {
+                font-size: 48px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #portfolio .pf-title {
+                font-size: 60px;
+            }
+        }
+
+        #portfolio .pf-title .pf-orange {
+            color: #f97316;
+        }
+
+        #portfolio .pf-cta-wrap {
+            margin-top: 24px;
+        }
+
+        @media (min-width: 1024px) {
+            #portfolio .pf-cta-wrap {
+                margin-top: 32px;
+            }
+        }
+
+        #portfolio .pf-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #ff6a00 0%, #ee4d00 100%);
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 10px 25px -4px rgba(255, 85, 0, 0.4);
+            transition: transform .3s, box-shadow .3s;
+        }
+
+        #portfolio .pf-cta:hover {
+            transform: scale(0.96);
+            box-shadow: 0 14px 30px -4px rgba(255, 85, 0, 0.5);
+        }
+
+        #portfolio .pf-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            #portfolio .pf-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+            }
+        }
+
+        #portfolio .pf-card {
+            position: relative;
+            border-radius: 26px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+            aspect-ratio: 4 / 3;
+            background-color: #0b1120;
+            transition: transform .5s, box-shadow .5s;
+        }
+
+        @media (min-width: 640px) {
+            #portfolio .pf-card {
+                border-radius: 32px;
+            }
+        }
+
+        #portfolio .pf-card:hover {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        #portfolio .pf-card-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .7s;
+        }
+
+        #portfolio .pf-card:hover .pf-card-img {
+            transform: scale(1.05);
+        }
+
+        #portfolio .pf-info {
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: box-shadow .3s;
+        }
+
+        @media (min-width: 640px) {
+            #portfolio .pf-info {
+                left: 16px;
+                right: 16px;
+                bottom: 16px;
+                padding: 16px 20px;
+            }
+        }
+
+        #portfolio .pf-info-text {
+            min-width: 0;
+        }
+
+        #portfolio .pf-cat {
+            display: block;
+            font-size: 11px;
+            font-weight: 500;
+            color: #a3a3a3;
+            margin-bottom: 4px;
+        }
+
+        @media (min-width: 640px) {
+            #portfolio .pf-cat {
+                font-size: 12px;
+            }
+        }
+
+        #portfolio .pf-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: #171717;
+            line-height: 1.375;
+            margin: 0;
+            transition: color .3s;
+        }
+
+        @media (min-width: 640px) {
+            #portfolio .pf-name {
+                font-size: 16px;
+            }
+        }
+
+        #portfolio .pf-card:hover .pf-name {
+            color: #f97316;
+        }
+
+        #portfolio .pf-arrow {
+            display: flex;
+            width: 36px;
+            height: 36px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            background: #f5f5f5;
+            color: #404040;
+            flex-shrink: 0;
+            text-decoration: none;
+            transition: background .3s, color .3s;
+        }
+
+        @media (min-width: 640px) {
+            #portfolio .pf-arrow {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        #portfolio .pf-arrow svg {
+            width: 15px;
+            height: 15px;
+            transition: transform .3s;
+        }
+
+        #portfolio .pf-card:hover .pf-arrow {
+            background: #f97316;
+            color: #ffffff;
+        }
+
+        #portfolio .pf-card:hover .pf-arrow svg {
+            transform: translate(2px, -2px);
+        }
+    </style>
+    <section id="portfolio">
+        <div class="pf-container">
+            <!-- Header: Left badge + description, Right heading + CTA -->
+            <div class="pf-header">
+                <div>
+                    <div class="pf-badge">
+                        <span class="pf-badge-text">Our Portfolio</span>
+                    </div>
+                    <p class="pf-desc">Explore our featured apps and enterprise digital products engineered for top
+                        performance, high retention, and seamless scalability.</p>
+                </div>
+                <div>
+                    <h2 class="pf-title">Distinct products.<br /><span class="pf-orange">Built to scale.</span></h2>
+                    <div class="pf-cta-wrap">
+                        <a href="#contact" class="pf-cta">View All Case Studies</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-Column Portfolio Grid -->
+            <div class="pf-grid">
+                <!-- Card 1: LogiFlow -->
+                <div class="pf-card">
+                    <img src="./images/workspace/mockup-logistics.svg" alt="LogiFlow Fleet &amp; Supply Chain Cockpit"
+                        class="pf-card-img" loading="lazy" />
+                    <div class="pf-info">
+                        <div class="pf-info-text">
+                            <span class="pf-cat">Enterprise SaaS</span>
+                            <h3 class="pf-name">LogiFlow — Fleet &amp; Supply Chain Cockpit</h3>
+                        </div>
+                        <a href="#contact" class="pf-arrow" aria-label="View LogiFlow case study">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: PayPulse -->
+                <div class="pf-card">
+                    <img src="./images/workspace/mockup-fintech.svg" alt="PayPulse Digital Wallet &amp; Neobank"
+                        class="pf-card-img" loading="lazy" />
+                    <div class="pf-info">
+                        <div class="pf-info-text">
+                            <span class="pf-cat">FinTech App</span>
+                            <h3 class="pf-name">PayPulse — Digital Wallet &amp; Neobank</h3>
+                        </div>
+                        <a href="#contact" class="pf-arrow" aria-label="View PayPulse case study">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: HealthSync -->
+                <div class="pf-card">
+                    <img src="./images/workspace/mockup-health.svg" alt="HealthSync Telemedicine &amp; Vitals"
+                        class="pf-card-img" loading="lazy" />
+                    <div class="pf-info">
+                        <div class="pf-info-text">
+                            <span class="pf-cat">HealthTech Platform</span>
+                            <h3 class="pf-name">HealthSync — Telemedicine &amp; Vitals</h3>
+                        </div>
+                        <a href="#contact" class="pf-arrow" aria-label="View HealthSync case study">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: SwiftCart -->
+                <div class="pf-card">
+                    <img src="./images/workspace/mockup-delivery.svg" alt="SwiftCart On-Demand Grocery Delivery"
+                        class="pf-card-img" loading="lazy" />
+                    <div class="pf-info">
+                        <div class="pf-info-text">
+                            <span class="pf-cat">Quick Commerce</span>
+                            <h3 class="pf-name">SwiftCart — On-Demand Grocery Delivery</h3>
+                        </div>
+                        <a href="#contact" class="pf-arrow" aria-label="View SwiftCart case study">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5: EduSphere -->
+                <div class="pf-card">
+                    <img src="./images/workspace/mockup-edtech.svg" alt="EduSphere Interactive Micro-Learning"
+                        class="pf-card-img" loading="lazy" />
+                    <div class="pf-info">
+                        <div class="pf-info-text">
+                            <span class="pf-cat">EdTech App</span>
+                            <h3 class="pf-name">EduSphere — Interactive Micro-Learning</h3>
+                        </div>
+                        <a href="#contact" class="pf-arrow" aria-label="View EduSphere case study">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Aura Social -->
+                <div class="pf-card">
+                    <img src="./images/workspace/mockup-social.svg" alt="Aura Social Creator Live Streaming"
+                        class="pf-card-img" loading="lazy" />
+                    <div class="pf-info">
+                        <div class="pf-info-text">
+                            <span class="pf-cat">Social &amp; Media</span>
+                            <h3 class="pf-name">Aura Social — Creator Live Streaming</h3>
+                        </div>
+                        <a href="#contact" class="pf-arrow" aria-label="View Aura Social case study">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- smart-assist-section -->
+    <!-- Technologies section: utilities missing from compiled CSS -->
+    <style>
+        #technologies .grid-cols-4 {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        @media (min-width: 640px) {
+            #technologies .sm\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            #technologies .sm\:inline {
+                display: inline;
+            }
+        }
+
+        #technologies .text-\[10px\] {
+            font-size: 10px;
+            line-height: 1.45;
+        }
+
+        #technologies .text-\[11px\] {
+            font-size: 11px;
+            line-height: 1.45;
+        }
+
+        #technologies .mb-0\.5 {
+            margin-bottom: 2px;
+        }
+
+        #technologies .min-w-0 {
+            min-width: 0;
+        }
+
+        #technologies .truncate {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        #technologies .font-mono {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        }
+
+        #technologies .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        #technologies .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        #technologies .uppercase {
+            text-transform: uppercase;
+        }
+
+        #technologies .font-extrabold {
+            font-weight: 800;
+        }
+
+        #technologies .pt-3\.5 {
+            padding-top: 14px;
+        }
+
+        #technologies .pt-1 {
+            padding-top: 4px;
+        }
+
+        #technologies .pb-2 {
+            padding-bottom: 8px;
+        }
+
+        #technologies .my-3\.5 {
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+
+        #technologies .w-7 {
+            width: 28px;
+        }
+
+        #technologies .h-7 {
+            height: 28px;
+        }
+
+        #technologies .w-8 {
+            width: 32px;
+        }
+
+        #technologies .h-8 {
+            height: 32px;
+        }
+
+        #technologies .overflow-x-auto {
+            overflow-x: auto;
+        }
+
+        #technologies .ml-2 {
+            margin-left: 8px;
+        }
+
+        #technologies .shadow-xl\! {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        #technologies .hover\:scale-\[1\.01\]:hover {
+            transform: scale(1.01);
+        }
+
+        #technologies .mb-3 {
+            margin-bottom: 12px;
+        }
+
+        #technologies .pb-3 {
+            padding-bottom: 12px;
+        }
+
+        #technologies .rounded-md {
+            border-radius: 6px;
+        }
+
+        #technologies .w-4 {
+            width: 16px;
+        }
+
+        #technologies .h-4 {
+            height: 16px;
+        }
+
+        /* Bottom feature cards */
+        #technologies .feat-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 72px;
+        }
+
+        @media (min-width: 640px) {
+            #technologies .feat-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #technologies .feat-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        #technologies .feat-card {
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #e8eaed;
+            border-radius: 20px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        #technologies .feat-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(249, 115, 22, 0.35);
+            box-shadow: 0 22px 45px -18px rgba(15, 23, 42, 0.18);
+        }
+
+        #technologies .feat-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #fff3e8, #ffe7d1);
+            color: #f97316;
+            flex: none;
+        }
+
+        #technologies .feat-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        #technologies .feat-card h4 {
+            margin: 0 0 8px;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: #101828;
+        }
+
+        #technologies .feat-card p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #667085;
+        }
+    </style>
+    <section class="relative overflow-hidden" id="technologies">
+        <div class="container">
+            <!-- Top Grid: Content & Mockup -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7.5 items-center mb-20">
+                <!-- Left Content -->
+                <div>
+                    <span class="sec-badge mb-2.5">TECHNOLOGIES</span>
+                    <h3
+                        class="text-3xl md:text-4xl lg:text-5xl font-medium text-default-900 tracking-tight leading-tight mb-2.5">
+                        Powered by Modern Technology
+                    </h3>
+                    <p class="text-default-500 md:text-lg text-base md:leading-relaxed leading-normal max-w-lg mb-6">
+                        We use modern development technologies to build applications that are fast, secure, scalable,
+                        and ready for the future: Android, iOS, Flutter, React Native, Kotlin, Firebase, Node.js, PHP,
+                        and MySQL.
+                    </p>
+                    <div>
+                        <a href="#"
+                            class="group relative px-8.5 overflow-hidden rounded-full bg-black shadow-xl! text-white inline-flex items-center justify-center hover:scale-95 transition-all duration-300">
+                            <div
+                                class="relative inline-flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
+                                <div class="flex items-center gap-3 h-14">
+                                    <span class="font-medium">Explore Our Tech Stack</span>
+                                </div>
+                                <div class="flex items-center gap-3 h-14 absolute top-full">
+                                    <span class="font-medium">Explore Our Tech Stack</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Engineering Architecture Mockup -->
+                <div class="relative w-full mx-auto overflow-hidden"
+                    style="border-radius: 28px; border: 1px solid rgba(15, 23, 42, 0.08); box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.35); background: #080d1a;">
+                    <img src="./images/workspace/mockup-techstack.svg"
+                        alt="AlgoFort mobile app engineering architecture and technology stack"
+                        style="display: block; width: 100%; height: auto;" loading="lazy" />
+                </div>
+            </div>
+
+            <!-- Bottom Grid: Features -->
+            <div class="feat-grid">
+                <!-- Secure Authentication -->
+                <div class="feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Secure Authentication</h4>
+                        <p>Safe and seamless login experiences for your users with OAuth, biometric &amp; multi-factor
+                            support.</p>
+                    </div>
+                </div>
+
+                <!-- Push Notifications -->
+                <div class="feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Push Notifications</h4>
+                        <p>Keep users informed, engaged, and connected with targeted, personalized alerts.</p>
+                    </div>
+                </div>
+
+                <!-- Payment Integration -->
+                <div class="feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2" />
+                            <line x1="2" y1="10" x2="22" y2="10" />
+                            <line x1="6" y1="15" x2="10" y2="15" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Payment Integration</h4>
+                        <p>Enable smooth and secure online transactions with Stripe, PayPal, Apple Pay &amp; Google Pay.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- API & Real-Time Data -->
+                <div class="feat-card">
+                    <div class="feat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>API &amp; Real-Time Data</h4>
+                        <p>Connect with third-party tools, databases, CRMs, and live streaming sockets seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials-section -->
+    <section id="process" class="relative">
+        <style>
+            #process {
+                background: #f0f0ee;
+                padding: 64px 0;
+                color: #0a0a0a;
+            }
+
+            #process .proc-top {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: 40px;
+            }
+
+            #process .proc-badge {
+                display: inline-block;
+                padding: 7px 22px;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0.03em;
+                background: #ffffff;
+                border: 1px solid #e5e7eb;
+                border-radius: 9999px;
+                color: #1f2937;
+                text-transform: uppercase;
+                margin-bottom: 26px;
+            }
+
+            #process .proc-display {
+                margin: 0;
+                font-size: clamp(46px, 6.6vw, 96px);
+                font-weight: 600;
+                letter-spacing: -0.035em;
+                line-height: 1.02;
+                color: #0a0a0a;
+            }
+
+            #process .proc-aside {
+                max-width: 380px;
+                padding-bottom: 10px;
+            }
+
+            #process .proc-lead {
+                margin: 0 0 28px;
+                font-size: 17px;
+                line-height: 1.65;
+                color: #3f3f46;
+            }
+
+            #process .proc-cta {
+                display: inline-flex;
+                align-items: flex-start;
+                height: 56px;
+                overflow: hidden;
+                background: #ffffff;
+                border-radius: 9999px;
+                text-decoration: none;
+                box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            #process .proc-cta:hover {
+                transform: scale(0.95);
+                box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.3);
+            }
+
+            #process .proc-cta-track {
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            #process .proc-cta:hover .proc-cta-track {
+                transform: translateY(-50%);
+            }
+
+            #process .proc-cta-line {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                height: 56px;
+                padding: 0 30px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #0a0a0a;
+                white-space: nowrap;
+            }
+
+            #process .proc-cta-line svg {
+                width: 18px;
+                height: 18px;
+                flex: none;
+            }
+
+            /* Process card strip */
+            #process .proc-strip {
+                margin-top: 44px;
+                overflow-x: auto;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            #process .proc-strip::-webkit-scrollbar {
+                display: none;
+            }
+
+            #process .proc-strip-inner {
+                display: flex;
+                gap: 16px;
+                padding: 0;
+                min-width: min-content;
+                will-change: transform;
+            }
+
+            #process .proc-shot {
+                position: relative;
+                flex: 0 0 auto;
+                width: 72vw;
+                aspect-ratio: 4 / 5;
+                border-radius: 20px;
+                overflow: hidden;
+                background: #1a1a1a;
+                text-decoration: none;
+                display: block;
+            }
+
+            @media (min-width: 640px) {
+                #process .proc-shot {
+                    width: 46vw;
+                }
+            }
+
+            @media (min-width: 1024px) {
+                #process .proc-shot {
+                    width: clamp(340px, 30vw, 540px);
+                    aspect-ratio: auto;
+                    height: clamp(320px, 46vh, 440px);
+                }
+            }
+
+            #process .proc-shot img {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            #process .proc-shot:hover img {
+                transform: scale(1.06);
+            }
+
+            #process .proc-shot::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(180deg, rgba(8, 10, 15, 0) 40%, rgba(8, 10, 15, 0.88) 100%);
+            }
+
+            #process .proc-shot-body {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+                padding: 22px 22px 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            #process .proc-shot-step {
+                display: inline-block;
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 0.09em;
+                text-transform: uppercase;
+                color: #ffffff;
+                background: rgba(255, 255, 255, 0.16);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                backdrop-filter: blur(6px);
+                padding: 5px 11px;
+                border-radius: 999px;
+            }
+
+            #process .proc-shot-body h3 {
+                margin: 0;
+                font-size: clamp(17px, 1.35vw, 21px);
+                font-weight: 700;
+                letter-spacing: -0.01em;
+                line-height: 1.2;
+                color: #ffffff;
+            }
+
+            #process .proc-shot-body p {
+                margin: 0;
+                font-size: 13.5px;
+                line-height: 1.55;
+                color: rgba(255, 255, 255, 0.72);
+            }
+
+            @media (min-width: 1024px) {
+                #process {
+                    padding: 0;
+                }
+
+                #process .proc-pin {
+                    position: relative;
+                }
+
+                #process .proc-stage {
+                    position: sticky;
+                    top: 0;
+                    height: 100vh;
+                    overflow: hidden;
+                    padding: 36px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 44px;
+                }
+
+                #process .proc-strip {
+                    margin-top: 0;
+                    overflow: hidden;
+                }
+            }
+
+            @media (max-width: 640px) {
+                #process {
+                    padding: 64px 0;
+                }
+
+                #process .proc-strip {
+                    margin-top: 42px;
+                }
+            }
+        </style>
+        <div class="proc-pin">
+            <div class="proc-stage">
+                <div class="container">
+                    <!-- Top: heading + aside -->
+                    <div class="proc-top">
+                        <div>
+                            <span class="proc-badge">DEVELOPMENT PROCESS</span>
+                            <h2 class="proc-display">How We Build<br>Your App</h2>
+                        </div>
+                        <div class="proc-aside">
+                            <p class="proc-lead">A structured 7-step process. From first idea to launch and beyond,
+                                every step is planned, designed, tested, and supported.</p>
+                            <a href="#contact" class="proc-cta group">
+                                <span class="proc-cta-track">
+                                    <span class="proc-cta-line"><span>Build Your App</span><svg viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12" />
+                                            <polyline points="12 5 19 12 12 19" />
+                                        </svg></span>
+                                    <span class="proc-cta-line"><span>Build Your App</span><svg viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12" />
+                                            <polyline points="12 5 19 12 12 19" />
+                                        </svg></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="proc-strip">
+                        <div class="proc-strip-inner">
+
+                            <a href="#contact" class="proc-shot">
+                                <img src="./images/process/step-01.jpg" alt="Discover product goals" loading="lazy" />
+                                <div class="proc-shot-body">
+                                    <span class="proc-shot-step">Step 1</span>
+                                    <h3>Discover</h3>
+                                    <p>Understand Goals</p>
+                                </div>
+                            </a>
+
+                            <a href="#contact" class="proc-shot">
+                                <img src="./images/process/step-plan.jpg" alt="Plan the roadmap" loading="lazy" />
+                                <div class="proc-shot-body">
+                                    <span class="proc-shot-step">Step 2</span>
+                                    <h3>Plan</h3>
+                                    <p>Define Roadmap</p>
+                                </div>
+                            </a>
+
+                            <a href="#contact" class="proc-shot">
+                                <img src="./images/process/step-02.jpg" alt="App UI and UX design" loading="lazy" />
+                                <div class="proc-shot-body">
+                                    <span class="proc-shot-step">Step 3</span>
+                                    <h3>Design</h3>
+                                    <p>Modern &amp; Intuitive UI/UX Tailored to Users</p>
+                                </div>
+                            </a>
+
+                            <a href="#contact" class="proc-shot">
+                                <img src="./images/process/step-03.jpg" alt="Cloud infrastructure and development"
+                                    loading="lazy" />
+                                <div class="proc-shot-body">
+                                    <span class="proc-shot-step">Step 4</span>
+                                    <h3>Develop</h3>
+                                    <p>Industry Solution</p>
+                                </div>
+                            </a>
+
+                            <a href="#contact" class="proc-shot">
+                                <img src="./images/process/step-04.jpg" alt="Testing the app on devices"
+                                    loading="lazy" />
+                                <div class="proc-shot-body">
+                                    <span class="proc-shot-step">Step 5</span>
+                                    <h3>Test</h3>
+                                    <p>Rigorous Multi-Device Quality Assurance</p>
+                                </div>
+                            </a>
+
+                            <a href="#contact" class="proc-shot">
+                                <img src="./images/process/step-05.jpg" alt="Launch and growth analytics"
+                                    loading="lazy" />
+                                <div class="proc-shot-body">
+                                    <span class="proc-shot-step">Step 6</span>
+                                    <h3>Launch</h3>
+                                    <p>Deploy to App Store &amp; Google Play</p>
+                                </div>
+                            </a>
+
+                            <a href="#contact" class="proc-shot">
+                                <img src="./images/process/step-support.jpg" alt="Long-term support and maintenance"
+                                    loading="lazy" />
+                                <div class="proc-shot-body">
+                                    <span class="proc-shot-step">Step 7</span>
+                                    <h3>Support</h3>
+                                    <p>Long-Term Updates &amp; Maintenance</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Hidden skeleton: bundled Swiper initializes .storySwiper at load -->
+        <div class="swiper storySwiper" style="display: none;" aria-hidden="true">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+        </div>
+        <script>
+            (function () {
+                var section = document.getElementById("process");
+                if (!section) return;
+                var pin = section.querySelector(".proc-pin");
+                var stage = section.querySelector(".proc-stage");
+                var stripBox = section.querySelector(".proc-strip");
+                var stripInner = section.querySelector(".proc-strip-inner");
+                if (!pin || !stage || !stripBox || !stripInner) return;
+                var raf = null;
+                var shots = stripInner.querySelectorAll(".proc-shot");
+                function isDesktop() { return window.matchMedia("(min-width: 1024px)").matches; }
+                function fitCards() {
+                    if (isDesktop()) {
+                        var w = Math.floor((stripBox.clientWidth - 48) / 4);
+                        for (var i = 0; i < shots.length; i++) shots[i].style.width = w + "px";
+                    } else {
+                        for (var j = 0; j < shots.length; j++) shots[j].style.width = "";
+                    }
+                }
+                function maxShift() { return Math.max(0, stripInner.scrollWidth - stripBox.clientWidth); }
+                function layout() {
+                    fitCards();
+                    if (isDesktop()) {
+                        pin.style.height = (stage.offsetHeight + maxShift()) + "px";
+                    } else {
+                        pin.style.height = "";
+                        stripInner.style.transform = "";
+                    }
+                    update();
+                }
+                function update() {
+                    if (!isDesktop()) return;
+                    var rect = pin.getBoundingClientRect();
+                    var range = pin.offsetHeight - stage.offsetHeight;
+                    if (range <= 0) return;
+                    var p = Math.min(1, Math.max(0, -rect.top / range));
+                    stripInner.style.transform = "translate3d(" + (-p * maxShift()) + "px, 0, 0)";
+                }
+                function onScroll() {
+                    if (raf) return;
+                    raf = requestAnimationFrame(function () { raf = null; update(); });
+                }
+                window.addEventListener("scroll", onScroll, { passive: true });
+                window.addEventListener("resize", layout);
+                window.addEventListener("load", layout);
+                layout();
+                setTimeout(layout, 500);
+                setTimeout(layout, 1500);
+            })();
+        </script>
+    </section>
+
+    <!-- testimonial-section -->
+    <style>
+        .conicorn-testimonial-wrap {
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .conicorn-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .conicorn-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 22px;
+            border-radius: 9999px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #1f2937;
+        }
+
+        .conicorn-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 500;
+            color: #1a1a1a;
+            margin: 18px 0 0;
+            letter-spacing: -0.025em;
+            line-height: 1.15;
+        }
+
+        .conicorn-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            align-items: start;
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .conicorn-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .conicorn-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        .conicorn-col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .conicorn-card {
+            background: #f2f2f2;
+            border-radius: 40px;
+            padding: 36px 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+        }
+
+        .conicorn-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+        }
+
+        .conicorn-card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+
+        .conicorn-author-info {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .conicorn-avatar {
+            width: 50px !important;
+            height: 50px !important;
+            min-width: 50px;
+            max-width: 50px;
+            border-radius: 9999px !important;
+            object-fit: cover !important;
+            display: block;
+        }
+
+        .conicorn-author-name {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0;
+            line-height: 1.25;
+        }
+
+        .conicorn-author-role {
+            font-size: 13px;
+            color: #525252;
+            margin: 4px 0 0;
+            line-height: 1.25;
+        }
+
+        .conicorn-quote-icon {
+            width: 26px !important;
+            height: 26px !important;
+            max-width: 26px;
+            object-fit: contain !important;
+            opacity: 0.6;
+            display: block;
+        }
+
+        .conicorn-card-quote {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #1a1a1a;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        .conicorn-video-card {
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+            min-height: 460px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 32px;
+            background: #1a1a1a;
+            box-sizing: border-box;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+        }
+
+        .conicorn-video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+        }
+
+        .conicorn-video-bg {
+            position: absolute;
+            inset: 0;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: none !important;
+            object-fit: cover !important;
+            filter: grayscale(1);
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+            pointer-events: none;
+        }
+
+        .conicorn-video-card:hover .conicorn-video-bg {
+            transform: scale(1.05);
+        }
+
+        .conicorn-video-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.85) 100%);
+            pointer-events: none;
+        }
+
+        .conicorn-play-btn {
+            position: relative;
+            z-index: 2;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.25s ease, background 0.25s ease;
+            text-decoration: none;
+        }
+
+        .conicorn-play-btn:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.55);
+        }
+
+        .conicorn-video-bottom {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .conicorn-video-logo {
+            height: 22px !important;
+            width: auto !important;
+            max-width: 160px;
+            object-fit: contain !important;
+            filter: brightness(0) invert(1);
+            display: block;
+        }
+
+        .conicorn-video-title {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.35;
+            margin: 0;
+        }
+    </style>
+    <section id="testimonials" class="relative lg:py-32 py-16 overflow-hidden"><a id="testimonial" class="sr-only"></a>
+        <div class="container">
+            <!-- Section Header -->
+            <div class="conicorn-header">
+                <div class="conicorn-badge">
+                    <span>007 &bull; TESTIMONIALS</span>
+                </div>
+                <h2 class="conicorn-title">What Founders & Product Leaders Say About AlgoFort</h2>
+            </div>
+            <!-- Conicorn Testimonials 3-Column Masonry Grid -->
+            <div class="conicorn-grid">
+                <!-- Column 1 -->
+                <div class="conicorn-col">
+                    <!-- Video Card 1 -->
+                    <div class="conicorn-video-card">
+                        <img src="../testmional/assets/images/aSmMadORFrjf0SEWGxtfp2qXEmA_w632_h735.png"
+                            onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/aSmMadORFrjf0SEWGxtfp2qXEmA_w632_h735.png';}"
+                            alt="Scaling SaaS Operations" class="conicorn-video-bg" />
+                        <div class="conicorn-video-overlay"></div>
+
+                        <div class="relative z-10">
+                            <a href="https://www.youtube.com/watch?v=8AHPXm9Y6mI" target="_blank"
+                                rel="noopener noreferrer" class="conicorn-play-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" class="ml-0.5">
+                                    <polygon points="7,4 20,12 7,20" fill="#ffffff"></polygon>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="conicorn-video-bottom">
+                            <div class="h-6 flex items-center">
+                                <img src="../testmional/assets/images/tQe8KYZERtfj6dEWPfoEV61M2Q_w636_h128.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/tQe8KYZERtfj6dEWPfoEV61M2Q_w636_h128.png';}"
+                                    alt="Logo" class="conicorn-video-logo" />
+                            </div>
+                            <p class="conicorn-video-title">
+                                Scaling SaaS Operations with AI Automation
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Review Card: Daniel Kim -->
+                    <div class="conicorn-card">
+                        <div class="conicorn-card-top">
+                            <div class="conicorn-author-info">
+                                <img src="../testmional/assets/images/z6cPmsnJML2flePXMqm2kdZG6EI_w400_h400.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/z6cPmsnJML2flePXMqm2kdZG6EI_w400_h400.png';}"
+                                    alt="Avatar" class="conicorn-avatar" />
+                                <div>
+                                    <h4 class="conicorn-author-name">Daniel Kim</h4>
+                                    <p class="conicorn-author-role">Founder, ScaleLabs Education</p>
+                                </div>
+                            </div>
+                            <img src="../testmional/assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png"
+                                onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png';}"
+                                alt="Quote" class="conicorn-quote-icon" />
+                        </div>
+                        <p class="conicorn-card-quote">
+                            Our enrollment process used to require manual follow-ups and spreadsheet tracking. Now, AI
+                            handles lead qualification, scheduling, reminders, and CRM updates automatically. We’ve
+                            increased enrollment conversion by 35% in just one quarter.
+                        </p>
+                    </div>
+
+                    <!-- Review Card: Alex Johnson -->
+                    <div class="conicorn-card">
+                        <div class="conicorn-card-top">
+                            <div class="conicorn-author-info">
+                                <img src="../testmional/assets/images/BnPovhu3UVva8wf8pdIhGnyeu0_w400_h400.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/BnPovhu3UVva8wf8pdIhGnyeu0_w400_h400.png';}"
+                                    alt="Alex Johnson" class="conicorn-avatar" />
+                                <div>
+                                    <h4 class="conicorn-author-name">Alex Johnson</h4>
+                                    <p class="conicorn-author-role">Head of Operations, Finovate Consulting</p>
+                                </div>
+                            </div>
+                            <img src="../testmional/assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png"
+                                onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png';}"
+                                alt="Quote" class="conicorn-quote-icon" />
+                        </div>
+                        <p class="conicorn-card-quote">
+                            Security and compliance were major concerns for us. They designed an automation architecture
+                            that was not only highly efficient but enterprise-grade secure.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="conicorn-col">
+                    <!-- Review Card: David Lee -->
+                    <div class="conicorn-card">
+                        <div class="conicorn-card-top">
+                            <div class="conicorn-author-info">
+                                <img src="../testmional/assets/images/io1ebA6nKd3sIhRozjyWCmW7Pk_w320_h320.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/io1ebA6nKd3sIhRozjyWCmW7Pk_w320_h320.png';}"
+                                    alt="David Lee" class="conicorn-avatar" />
+                                <div>
+                                    <h4 class="conicorn-author-name">David Lee</h4>
+                                    <p class="conicorn-author-role">Founder, Atodio Studio</p>
+                                </div>
+                            </div>
+                            <img src="../testmional/assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png"
+                                onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png';}"
+                                alt="Quote" class="conicorn-quote-icon" />
+                        </div>
+                        <p class="conicorn-card-quote">
+                            We were spending hours on repetitive tasks. Their automation system saved us 30+ hours per
+                            week and dramatically improved our sales performance. Really impressive!
+                        </p>
+                    </div>
+
+                    <!-- Review Card: Sarah Mitchell -->
+                    <div class="conicorn-card">
+                        <div class="conicorn-card-top">
+                            <div class="conicorn-author-info">
+                                <img src="../testmional/assets/images/Nc7T0UP7TMYghubatYlzblQr3vc_w400_h400.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/Nc7T0UP7TMYghubatYlzblQr3vc_w400_h400.png';}"
+                                    alt="Sarah Mitchell" class="conicorn-avatar" />
+                                <div>
+                                    <h4 class="conicorn-author-name">Sarah Mitchell</h4>
+                                    <p class="conicorn-author-role">COO, BrightPath SaaS</p>
+                                </div>
+                            </div>
+                            <img src="../testmional/assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png"
+                                onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png';}"
+                                alt="Quote" class="conicorn-quote-icon" />
+                        </div>
+                        <p class="conicorn-card-quote">
+                            We struggled with inconsistent lead follow-ups and slow response times. Their AI automation
+                            blueprint gave us clarity first, then execution. Now, our CRM runs intelligently, leads are
+                            scored automatically, and follow-ups happen without manual effort. We’ve increased demo
+                            bookings by 40% while reducing operational friction.
+                        </p>
+                    </div>
+
+                    <!-- Review Card: Jonathan Reed -->
+                    <div class="conicorn-card">
+                        <div class="conicorn-card-top">
+                            <div class="conicorn-author-info">
+                                <img src="../testmional/assets/images/Jd4Actw3iicp7lVmQL6Tty7Ezw_w400_h400.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/Jd4Actw3iicp7lVmQL6Tty7Ezw_w400_h400.png';}"
+                                    alt="Jonathan Reed" class="conicorn-avatar" />
+                                <div>
+                                    <h4 class="conicorn-author-name">Jonathan Reed</h4>
+                                    <p class="conicorn-author-role">Managing Director, Nexora Digital Agency</p>
+                                </div>
+                            </div>
+                            <img src="../testmional/assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png"
+                                onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png';}"
+                                alt="Quote" class="conicorn-quote-icon" />
+                        </div>
+                        <p class="conicorn-card-quote">
+                            We were scaling fast but drowning in manual workflows. Their automation system connected our
+                            CRM, email marketing, and reporting into one intelligent flow. The result? 30+ hours saved
+                            per week and complete visibility across our pipeline.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="conicorn-col">
+                    <!-- Review Card: Michael Tran -->
+                    <div class="conicorn-card">
+                        <div class="conicorn-card-top">
+                            <div class="conicorn-author-info">
+                                <img src="../testmional/assets/images/ZWhfkzGB6c8iJeDzvp6nt6xFt4_w400_h400.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/ZWhfkzGB6c8iJeDzvp6nt6xFt4_w400_h400.png';}"
+                                    alt="Michael Tran" class="conicorn-avatar" />
+                                <div>
+                                    <h4 class="conicorn-author-name">Michael Tran</h4>
+                                    <p class="conicorn-author-role">Founder &amp; CEO, Skyline Realty Group</p>
+                                </div>
+                            </div>
+                            <img src="../testmional/assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png"
+                                onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png';}"
+                                alt="Quote" class="conicorn-quote-icon" />
+                        </div>
+                        <p class="conicorn-card-quote">
+                            We reduced admin work by nearly 50% and doubled our qualified appointment bookings. The ROI
+                            was faster than we expected — and the system continues to scale with us.
+                        </p>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="conicorn-video-card">
+                        <img src="../testmional/assets/images/mKS6dvxPlvfsWt7d3VskQg0q8_w632_h735.png"
+                            onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/mKS6dvxPlvfsWt7d3VskQg0q8_w632_h735.png';}"
+                            alt="How Puno Automated 80% of Lead Handling" class="conicorn-video-bg" />
+                        <div class="conicorn-video-overlay"></div>
+
+                        <div class="relative z-10">
+                            <a href="https://www.youtube.com/watch?v=8AHPXm9Y6mI" target="_blank"
+                                rel="noopener noreferrer" class="conicorn-play-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" class="ml-0.5">
+                                    <polygon points="7,4 20,12 7,20" fill="#ffffff"></polygon>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="conicorn-video-bottom">
+                            <div class="h-6 flex items-center">
+                                <img src="../testmional/assets/images/tQe8KYZERtfj6dEWPfoEV61M2Q_w636_h128.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/tQe8KYZERtfj6dEWPfoEV61M2Q_w636_h128.png';}"
+                                    alt="Logo" class="conicorn-video-logo" />
+                            </div>
+                            <p class="conicorn-video-title">
+                                How Puno Automated 80% of Lead Handling
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Review Card: Laura Martinez -->
+                    <div class="conicorn-card">
+                        <div class="conicorn-card-top">
+                            <div class="conicorn-author-info">
+                                <img src="../testmional/assets/images/WOYTcCaxggRNt47bSlnpBZZRtp8_w400_h400.png"
+                                    onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/WOYTcCaxggRNt47bSlnpBZZRtp8_w400_h400.png';}"
+                                    alt="Laura Martinez" class="conicorn-avatar" />
+                                <div>
+                                    <h4 class="conicorn-author-name">Laura Martinez</h4>
+                                    <p class="conicorn-author-role">CMO, Elevate Commerce Co.</p>
+                                </div>
+                            </div>
+                            <img src="../testmional/assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png"
+                                onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='./assets/images/XZPB5Ggowpq8oDHAS6cc7FQYLc_w100_h96.png';}"
+                                alt="Quote" class="conicorn-quote-icon" />
+                        </div>
+                        <p class="conicorn-card-quote">
+                            Marketing automation always felt fragmented — too many tools, not enough cohesion. They
+                            unified everything into one intelligent ecosystem. Campaign triggers, abandoned cart flows,
+                            segmentation — all automated with precision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- faq-section -->
+    <section id="faq" class="lg:py-25 md:pb-10 py-6"><a id="faqs" class="sr-only"></a>
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-3 lg:gap-25 gap-7.5 items-start">
+                <!-- Left Column: Title & Contact Card -->
+                <div class="lg:col-span-5 col-span-1 lg:space-y-20 space-y-10">
+                    <div class="space-y-4">
+                        <span class="sec-badge mb-2.5">FAQ</span>
+
+                        <h2
+                            class="text-2xl md:text-4xl lg:text-5xl font-medium text-default-950 tracking-normal leading-normal">
+                            Got Questions? We Have Answers.
+                        </h2>
+                    </div>
+
+                    <!-- Contact Box -->
+                    <div class="bg-white md:p-7.5 p-5 rounded-2xl shadow-xl shadow-zinc-200/50 space-y-6">
+                        <div class="size-12.5 bg-primary-1 rounded-full flex items-center justify-center shadow-lg">
+                            <i class="iconify lucide--headset size-6 text-white"></i>
+                        </div>
+                        <div class="space-y-6">
+                            <h3 class="md:text-2xl text-xl font-medium text-default-950 mb-3.5">
+                                Ready to discuss your project?
+                            </h3>
+                            <a href="#"
+                                class="group relative px-8.5 overflow-hidden rounded-full bg-black shadow-xl! text-white inline-flex items-center justify-center hover:scale-95 transition-all duration-300 text-nowrap">
+                                <div
+                                    class="relative inline-flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
+                                    <div class="flex items-center gap-3 h-14">
+                                        <span class="font-medium">Talk to an App Expert</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 h-14 absolute top-full">
+                                        <span class="font-medium">Talk to an App Expert</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Accordion Items -->
+                <div class="lg:col-span-7 col-span-2 space-y-4">
+                    <div class="hs-accordion-group lg:col-span-7 lg:space-y-4 space-y-2.5">
+                        <!-- Accordion Item 1 -->
+                        <div class="hs-accordion active bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300"
+                            id="hs-heading-one">
+                            <button
+                                class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500"
+                                aria-controls="hs-collapse-one">
+                                <h3 class="text-base md:text-xl font-medium">
+                                    How much does it cost to develop an app?
+                                </h3>
+                                <div
+                                    class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                                    <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                                </div>
+                            </button>
+                            <div id="hs-collapse-one"
+                                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                                aria-labelledby="hs-heading-one">
+                                <div
+                                    class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                                    The cost depends on the application's features, complexity, design, integrations,
+                                    and platform requirements. Contact us and we'll provide a solution based on your
+                                    specific needs.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300"
+                            id="hs-heading-two">
+                            <button
+                                class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500"
+                                aria-controls="hs-collapse-two">
+                                <h3 class="text-base md:text-xl font-medium">
+                                    How long does it take to build an app?
+                                </h3>
+                                <div
+                                    class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                                    <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                                </div>
+                            </button>
+                            <div id="hs-collapse-two"
+                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                aria-labelledby="hs-heading-two">
+                                <div
+                                    class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                                    Development time depends on the scope and complexity of the project. After
+                                    understanding your requirements, we'll provide a clear development timeline.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300"
+                            id="hs-heading-three">
+                            <button
+                                class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500"
+                                aria-controls="hs-collapse-three">
+                                <h3 class="text-base md:text-xl font-medium">
+                                    Can you develop both Android and iOS apps?
+                                </h3>
+                                <div
+                                    class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                                    <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                                </div>
+                            </button>
+                            <div id="hs-collapse-three"
+                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                aria-labelledby="hs-heading-three">
+                                <div
+                                    class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                                    Yes. We can develop applications for Android, iOS, or both platforms depending on
+                                    your business requirements.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300"
+                            id="hs-heading-four">
+                            <button
+                                class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500"
+                                aria-controls="hs-collapse-four">
+                                <h3 class="text-base md:text-xl font-medium">
+                                    Can you redesign my existing application?
+                                </h3>
+                                <div
+                                    class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                                    <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                                </div>
+                            </button>
+                            <div id="hs-collapse-four"
+                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                aria-labelledby="hs-heading-four">
+                                <div
+                                    class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                                    Absolutely. We can improve your existing application's UI, UX, performance, and
+                                    functionality.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5 -->
+                        <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300"
+                            id="hs-heading-five">
+                            <button
+                                class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500"
+                                aria-controls="hs-collapse-five">
+                                <h3 class="text-base md:text-xl font-medium">
+                                    Do you provide support after launch?
+                                </h3>
+                                <div
+                                    class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                                    <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                                </div>
+                            </button>
+                            <div id="hs-collapse-five"
+                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                aria-labelledby="hs-heading-five">
+                                <div
+                                    class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                                    Yes. We provide ongoing maintenance, updates, improvements, and technical support
+                                    after your application goes live.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 6 -->
+                        <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300"
+                            id="hs-heading-six">
+                            <button
+                                class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500"
+                                aria-controls="hs-collapse-six">
+                                <h3 class="text-base md:text-xl font-medium">
+                                    Can you integrate third-party services?
+                                </h3>
+                                <div
+                                    class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                                    <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                                </div>
+                            </button>
+                            <div id="hs-collapse-six"
+                                class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                aria-labelledby="hs-heading-six">
+                                <div
+                                    class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                                    Yes. We can integrate APIs, payment gateways, CRMs, analytics, maps, authentication
+                                    systems, and other third-party services.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- download-section -->
+    <section id="contact" class="relative overflow-hidden pt-20 lg:pt-30 pb-8"><a id="download" class="sr-only"></a>
+        <!-- Main Content -->
+        <div class="container relative z-30">
+            <div class="grid grid-cols-1 items-center md:grid-cols-3 md:gap-0 gap-7.5">
+                <!-- Left Column -->
+                <div class="order-1 flex flex-col items-center text-center md:text-left lg:items-start md:me-10">
+                    <h3 class="text-2xl font-medium tracking-tight text-default-900 lg:text-4xl">
+                        Let's Turn Your Idea Into an App People Love to Use.
+                    </h3>
+
+                    <p class="mt-2.5 text-lg text-default-600 lg:mt-5">
+                        Whether you're starting a new digital product or improving an existing application, our team is
+                        ready to help you plan, design, build, and launch it.
+                    </p>
+
+                    <div class="mt-3.5 flex flex-col gap-4 lg:mt-8 relative z-40">
+                        <!-- iPhone Button -->
+                        <a href="#"
+                            class="group relative z-40 inline-flex overflow-hidden rounded-full bg-black lg:px-8.5 px-3.5 text-white shadow-xl transition-all duration-300 hover:scale-95">
+                            <div
+                                class="relative flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
+                                <div class="flex h-14 items-center gap-3">
+                                    <img src="./images/icons/app-store-light.svg" class="size-5" alt="" />
+                                    <span class="lg:text-base text-sm">Start Your Project</span>
+                                </div>
+
+                                <div class="absolute top-full flex h-14 items-center gap-3">
+                                    <img src="./images/icons/app-store-light.svg" class="size-5" alt="" />
+                                    <span class="lg:text-base text-sm">Start Your Project</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Android Button -->
+                        <a href="#"
+                            class="group relative z-40 inline-flex overflow-hidden rounded-full bg-default-200 lg:px-8.5 px-3.5 text-black transition-all duration-300 hover:scale-95">
+                            <div
+                                class="relative flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
+                                <div class="flex h-14 items-center gap-2.5">
+                                    <img src="./images/icons/play-store.svg" class="size-5" alt="" />
+                                    <span class="lg:text-base text-sm">Schedule Consultation</span>
+                                </div>
+
+                                <div class="absolute top-full flex h-14 items-center gap-2.5">
+                                    <img src="./images/icons/play-store.svg" class="size-5" alt="" />
+                                    <span class="lg:text-base text-sm">Schedule Consultation</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Center Mobile -->
+                <div class="order-3 flex justify-center md:order-2">
+                    <img src="./images/workspace/mobile-image.png" alt="App Dashboard"
+                        class="relative z-10 w-full md:max-w-56 md:h-80 lg:h-156 lg:max-w-114" />
+                </div>
+
+                <!-- Right Column -->
+                <div class="order-2 flex flex-col items-center md:order-3 lg:items-end md:ms-10">
+                    <div class="text-center lg:max-w-xl md:text-start">
+                        <h3 class="mb-5 text-2xl font-medium tracking-tight text-default-900 lg:text-4xl">
+                            Have an App Idea? Schedule a Discovery Call
+                        </h3>
+
+                        <div class="inline-block rounded-2xl bg-white p-2 shadow-2xl z-30 relative">
+                            <div class="flex items-center justify-center rounded-2xl bg-default-200 p-2">
+                                <img src="./images/icons/icon-39.svg" alt="QR Code" class="size-36 lg:size-46" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blur Overlay -->
+            <div
+                class="absolute lg:-bottom-30 -bottom-18 top-auto left-0 z-20 lg:h-55 md:h-40 h-30 w-full bg-body-bg md:blur-[35px] blur-[20px]">
+            </div>
+        </div>
+
+        <!-- Clouds -->
+        <img src="./images/locations/cloud-04.webp" alt=""
+            class="absolute -bottom-12.5 h-72.5 -left-25 w-218 pointer-events-none -z-20" />
+
+        <img src="./images/locations/cloud-01.webp" alt=""
+            class="absolute -bottom-25 inset-e-25 -translate-x-1/2 w-224 h-72.5 pointer-events-none -z-6" />
+
+        <img src="./images/locations/cloud-04.webp" alt=""
+            class="absolute -bottom-50 inset-e-0 top-auto w-full h-87.5 pointer-events-none -z-5" />
+    </section>
+
+    <footer class="bg-body-bg pt-20 lg:pb-7.5 pb-5">
+        <div class="container">
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 lg:gap-32 md:gap-12.5 gap-7.5 md:grid-cols-4 justify-between">
+                <!-- Left Section: Logo & Subscription -->
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="inline-block mb-10">
+                        <img src="./images/algofort-logo.png" alt="AlgoFort Logo" class="h-10">
+                    </a>
+
+                    <div class="max-w-xl">
+                        <h2 class="md:text-2xl text-xl mb-2.5 font-medium">Build Powerful Digital Products With AlgoFort
+                        </h2>
+                        <p class="mb-5 text-lg text-default-500">Partner with an experienced development team.
+                            Delivering scalable apps and cutting-edge software solutions.</p>
+
+                        <!-- Subscription Form -->
+                        <form class="flex flex-row items-center gap-3 max-w-lg"
+                            style="display: flex; flex-direction: row; align-items: center;">
+                            <input type="email" placeholder="Enter your email" required
+                                class="rounded-full border border-default-200 bg-default-200 px-5 py-3 text-default-900 placeholder:text-default-400 focus:outline-none text-base transition-all"
+                                style="flex: 1; min-width: 0;">
+                            <button type="submit"
+                                class="group relative overflow-hidden whitespace-nowrap rounded-full bg-default-900 px-7 py-3.5 font-medium text-white transition-all hover:scale-95 duration-300"
+                                style="flex-shrink: 0; min-width: 135px; text-align: center;">
+                                <span class="relative block overflow-hidden">
+                                    <span
+                                        class="block transition-transform duration-300 group-hover:-translate-y-full">Subscribe</span>
+                                    <span
+                                        class="absolute left-0 top-full block transition-transform duration-300 group-hover:-translate-y-full">Subscribe</span>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Section: Links -->
+                <div>
+                    <h3 class="text-base font-medium text-default-900 lg:mb-7.5 mb-5">Pages links</h3>
+                    <div class="flex flex-col justify-end gap-2">
+                        <a href="#hero"
+                            class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Home</a>
+                        <a href="#services"
+                            class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Services</a>
+                        <a href="#capabilities"
+                            class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Capabilities</a>
+                        <a href="#portfolio"
+                            class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Portfolio</a>
+                        <a href="#technologies"
+                            class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Technologies</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-medium text-default-900 lg:mb-7.5 mb-5">Other links</h3>
+                    <a href="#process"
+                        class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Development
+                        Process</a>
+                    <a href="#testimonials"
+                        class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Testimonials</a>
+                    <a href="#faq"
+                        class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">FAQs</a>
+                    <a href="#contact"
+                        class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Start
+                        Project</a>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="lg:mt-16 md:mt-8 mt-6 border-t border-default-200 md:pt-7.5 pt-5 flex flex-col md:flex-row md:justify-between justify-start items-center md:gap-6 gap-5">
+                <p class="text-default-600 md:text-lg text-base">
+                    Â© 2026 <a href="https://www.algofort.com/"
+                        class="text-default-900 font-medium hover:underline">AlgoFort</a>. All rights reserved.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="flex items-center md:justify-end justify-start gap-2.5">
+                    <a href="#" target="_blank"
+                        class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i
+                                class="iconify tabler--brand-instagram size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+
+                            <i
+                                class="iconify tabler--brand-instagram size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i
+                                class="iconify tabler--brand-x-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+
+                            <i
+                                class="iconify tabler--brand-x-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i
+                                class="iconify tabler--brand-linkedin-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+
+                            <i
+                                class="iconify tabler--brand-linkedin-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank"
+                        class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i
+                                class="iconify tabler--brand-facebook-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+
+                            <i
+                                class="iconify tabler--brand-facebook-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+
+
+</body>
+
+</html>

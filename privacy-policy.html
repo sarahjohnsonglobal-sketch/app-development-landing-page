@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <title>Privacy Policy | Habitline - Mobile App & SaaS Landing Page Tailwind CSS 4 HTML Template</title>
+    <!-- Base removed for local relative paths -->
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="title" content="Habitline - Mobile App & SaaS Landing Page Tailwind CSS 4 HTML Template">
+    <meta name="description" content="Habitline is a modern and fully responsive mobile app and SaaS landing page template built with Tailwind CSS 4. Perfect for AI startups, productivity apps, software products, digital platforms, and modern web applications.">
+    
+    <meta name="keywords" content="mobile app template, saas landing page, tailwind css template, ai startup website, app landing page, productivity app template, software website template, startup landing page, web app template, saas html template">
+    
+    <meta name="author" content="Unifato">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <!-- Google Font Link (https://fonts.google.com/) -->
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    
+  <script type="module" crossorigin src="./assets/app.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/app.css">
+</head>
+
+<body class="bg-body-bg">
+
+    <!-- Navbar -->
+    <header>
+        <div class="nav-sticky navbar fixed inset-x-0 top-0 z-120 w-full">
+            <div class="container lg:py-7.5 md:py-5 py-3.5">
+                <div class="flex items-center lg:justify-center justify-between w-full lg:bg-transparent bg-white md:rounded-2xl rounded-lg ">
+                    <div class="lg:p-4 md:py-4 py-1.5 px-3 bg-white min-w-[175px] flex rounded-[20px] lg:shadow-lg">
+                        <a href="index.html">
+                            <img src="./images/logo.svg" alt="" class="md:h-8 h-7.5">
+                        </a>
+                    </div>
+    
+                    <div class="w-full h-2.5 transition-all duration-500 ease-in-out in-[.nav-sticky-on]:w-2.5 lg:flex hidden"></div>
+    
+                    <div class="flex items-center justify-between">
+                        <div class="p-1.5 bg-white rounded-[20px] whitespace-nowrap lg:shadow-lg lg:block hidden">
+                            <ul id="navbar" class="flex items-center">
+                                <li>
+                                    <a href="#features" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#usecase" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Usecase</a>
+                                </li>
+                                <li>
+                                    <a href="#metrics" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Metrics</a>
+                                </li>
+                                <li>
+                                    <a href="#smart-assist" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Smart Assist</a>
+                                </li>
+    
+                                <!-- Dropdown -->
+                                <li class="hs-dropdown [--trigger:hover] relative inline-flex">
+                                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle flex items-center gap-1 justify-center text-sm hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                        Pages
+                                        <i class="iconify lucide--chevron-down size-4"></i>
+                                    </button>
+    
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-44 bg-white rounded-xl mt-2 after:h-4 after:absolute after:-bottom-4 after:inset-s-0 after:w-full before:h-4 before:absolute before:-top-4 before:inset-s-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                                        <div class="p-2.5 space-y-0.5">
+                                            <a href="index.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Home
+                                            </a>
+                                            <a href="about.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                About
+                                            </a>
+                                            <a href="pricing.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Pricing
+                                            </a>
+                                            <a href="contact.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Contact
+                                            </a>
+                                            <a href="waitlist.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Waitlist
+                                            </a>
+                                            <a href="download.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Download
+                                            </a>
+                                            <a href="faqs.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                FAQs
+                                            </a>
+                                            <a href="privacy-policy.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Privacy Policy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="w-full h-2.5 transition-all duration-500 ease-in-out in-[.nav-sticky-on]:w-2.5 lg:flex hidden"></div>
+    
+                    <div class="flex items-center gap-1.25 p-1.5 bg-white rounded-[20px] shadow-lg lg:shadow-lg">
+                        <a href="https://www.apple.com/in/app-store/" target="_blank" aria-label="App Store" class="relative flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300 group">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <!-- Default Icon -->
+                                <img src="./images/icons/app-store.svg" alt="Icon" class="md:size-6 size-4.5 transition-transform duration-300 group-hover:-translate-y-6">
+    
+                                <!-- Hover Icon -->
+                                <img src="./images/icons/app-store.svg" alt="Icon" class="absolute md:size-6 size-4.5 translate-y-6 transition-transform duration-300 group-hover:translate-y-0">
+                            </div>
+                        </a>
+    
+                        <a href="https://play.google.com/store/games?device=windows" target="_blank" aria-label="App Store" class="relative flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300 group">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <!-- Default Icon -->
+                                <img src="./images/icons/play-store.svg" alt="Icon" class="md:size-6 size-4.5 transition-transform duration-300 group-hover:-translate-y-6">
+    
+                                <!-- Hover Icon -->
+                                <img src="./images/icons/play-store.svg" alt="Icon" class="absolute md:size-6 size-4.5 translate-y-6 transition-transform duration-300 group-hover:translate-y-0">
+                            </div>
+                        </a>
+    
+                        <div class="flex items-center lg:hidden">
+                            <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-menu" data-hs-overlay="#mobile-menu" class="flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300">
+                                <i class="iconify tabler--align-right size-6"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="mobile-menu" class="hs-overlay hs-overlay-open:trandefault-y-0 md:hs-overlay-open:top-24 hs-overlay-open:top-18 hs-overlay-open:opacity-100 [--body-scroll:true] opacity-0 fixed inset-x-0 top-0 z-110 h-50 md:mx-5 mx-4 rounded-lg -trandefault-y-full transform overflow-hidden bg-white shadow-xl transition-all duration-300 hidden" role="dialog" tabindex="-1" aria-labelledby="mobile-menu-label">
+            <div class="flex max-h-50 flex-col overflow-y-auto p-3">
+                <a href="index.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Features
+                </a>
+    
+                <a href="about.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Usecase
+                </a>
+    
+                <a href="services.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Metrics
+                </a>
+    
+                <a href="contact.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Features
+                </a>
+    
+                <div class="hs-accordion">
+                    <button type="button" class="hs-accordion-toggle group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                        Pages
+                        <i class="iconify tabler--chevron-down ms-4"></i>
+                    </button>
+    
+                    <div class="hs-accordion-content hidden w-full overflow-hidden ps-5 pb-4 transition-[height]">
+                        <a href="index.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Home
+                        </a>
+                        <a href="about.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            About
+                        </a>
+                        <a href="pricing.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Pricing
+                        </a>
+                        <a href="contact.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Contact
+                        </a>
+                        <a href="waitlist.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Waitlist
+                        </a>
+                        <a href="download.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Download
+                        </a>
+                        <a href="faqs.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            FAQs
+                        </a>
+                        <a href="privacy-policy.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="lg:pt-50 md:pt-42 pt-34 md:pb-10">
+        <div class="container">
+            <div class="text-center space-y-5">
+                <h3 class="lg:text-[90px] md:text-5xl text-4xl font-medium">Privacy Policy</h3>
+                <div class="md:text-lg text-sm">Last updated: 10 Jan 2026</div>
+            </div>
+
+            <div class="lg:py-25 md:py-18 py-12">
+                <div class="mx-auto max-w-4xl">
+                    <div class="md:space-y-10 space-y-5 text-default-800">
+                        <!-- Heading -->
+                        <div>
+                            <h2 class="text-xl md:text-2xl lg:text-4xl font-medium text-default-900 mb-2.5">
+                                Collecting Personal Information
+                            </h2>
+
+                            <p class="md:text-lg text-base text-default-600 md:leading-relaxed leading-normal">
+                                Habitline collects limited personal information to provide a smooth, personalized habit-tracking experience. This includes details you share when creating an account and data generated while using the app. We collect only what is necessary to improve functionality, insights, and overall usability.
+                            </p>
+                        </div>
+
+                        <!-- List -->
+                        <ul class="lg:space-y-4 space-y-2.5 ps-6 list-disc text-default-600 marker:text-default-600">
+                            <li>
+                                Account details such as name and email address
+                            </li>
+
+                            <li>
+                                Habits, routines, streaks, and completion activity
+                            </li>
+
+                            <li>
+                                App usage data to improve performance and features
+                            </li>
+
+                            <li>
+                                Device and technical information for stability and security
+                            </li>
+                        </ul>
+
+                        <p class="md:text-lg text-base text-default-600 md:leading-relaxed leading-normal">
+                            We use this information solely to operate and enhance Habitline. Your data is never collected for unnecessary or unrelated purposes.
+                        </p>
+
+                        <!-- Second Heading -->
+                        <div>
+                            <h3 class="text-xl md:text-2xl lg:text-4xl mb-2.5 font-semibold text-default-900">
+                                Sharing Personal Information
+                            </h3>
+
+                            <p class="text-default-600 md:text-lg text-base leading-relaxed">
+                                Data is shared strictly when necessary to operate the platform responsibly and securely—such as with trusted service providers who help with hosting, analytics, or customer support. These partners are required to follow strict confidentiality and security standards. We may also disclose information when required by law or to protect the safety, rights, and integrity of our users and the Habitline platform. Outside of these limited and essential situations, your personal data remains private and fully under your control.
+                            </p>
+                        </div>
+
+                        <p class="md:text-lg text-base text-default-600 md:leading-relaxed leading-normal">
+                            Habitline respects your privacy and does not sell or misuse your personal data. Information is shared only when required to operate the service responsibly and securely.
+                        </p>
+
+                        <!-- Ordered List -->
+                        <ol class="space-y-4 ps-6 list-decimal text-default-600 marker:font-semibold marker:text-default-600">
+                            <li>
+                                With trusted service providers for hosting, analytics, and customer support
+                            </li>
+
+                            <li>
+                                To comply with legal requirements or lawful requests
+                            </li>
+
+                            <li>
+                                To protect the rights, safety, or security of users and the platform
+                            </li>
+
+                            <li>
+                                During business operations such as service improvements or maintenance
+                            </li>
+                        </ol>
+
+                        <p class="md:text-lg text-base text-default-600 md:leading-relaxed leading-normal">
+                            All shared data is handled securely and only for purposes aligned with Habitline’s core services. We continuously review our practices to ensure your information remains protected and confidential.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body-bg pt-20 lg:pb-7.5 pb-5">
+        <div class="container">
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 lg:gap-32 md:gap-12.5 gap-7.5 md:grid-cols-4 justify-between">
+                <!-- Left Section: Logo & Subscription -->
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="inline-block mb-10">
+                        <img src="./images/logo.svg" alt="Habitline Logo" class="h-11">
+                    </a>
+    
+                    <div class="max-w-xl">
+                        <h2 class="md:text-2xl text-xl mb-2.5 font-medium">Stay on top of your habits</h2>
+                        <p class="mb-5 text-lg text-default-500">No spam. Just simple advice for staying consistent.</p>
+    
+                        <!-- Subscription Form -->
+                        <form class="flex flex-row items-center gap-3 max-w-lg" style="display: flex; flex-direction: row; align-items: center;">
+                            <input type="email" placeholder="Enter your email" required class="rounded-full border border-default-200 bg-default-200 px-5 py-3 text-default-900 placeholder:text-default-400 focus:outline-none text-base transition-all" style="flex: 1; min-width: 0;">
+                            <button type="submit" class="whitespace-nowrap rounded-full bg-default-900 px-7 py-3.5 font-medium text-white transition-all hover:scale-95" style="flex-shrink: 0; min-width: 135px; text-align: center;">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Right Section: Links -->
+                <div>
+                    <h3 class="text-base font-medium text-default-900 lg:mb-7.5 mb-5">Pages links</h3>
+                    <div class="flex flex-col justify-end gap-2">
+                        <a href="index.html" class="mmd:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Home</a>
+                        <a href="about.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">About</a>
+                        <a href="pricing.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Pricing</a>
+                        <a href="contact.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Contact</a>
+                        <a href="waitlist.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Waitlist</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-medium text-default-900 lg:mb-7.5 mb-5">Other links</h3>
+                    <a href="download.html" class=" :text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Download</a>
+                    <a href="faqs.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">FAQs</a>
+                    <a href="privacy-policy.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+    
+            <!-- Bottom Bar -->
+            <div class="lg:mt-16 md:mt-8 mt-6 border-t border-default-200 md:pt-7.5 pt-5 flex flex-col md:flex-row md:justify-between justify-start items-center md:gap-6 gap-5">
+                <p class="text-default-600 md:text-lg text-base">
+                    Develop by <a href="https://unifato.com/" class="text-default-900 font-medium hover:underline">Unifato</a>
+                </p>
+    
+                <!-- Social Icons -->
+                <div class="flex items-center md:justify-end justify-start gap-2.5">
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-instagram size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-instagram size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-x-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-x-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-linkedin-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-linkedin-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-facebook-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-facebook-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

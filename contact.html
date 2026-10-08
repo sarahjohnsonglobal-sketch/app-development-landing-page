@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <title>contact | Habitline - Mobile App & SaaS Landing Page Tailwind CSS 4 HTML Template</title>
+    <!-- Base removed for local relative paths -->
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="title" content="Habitline - Mobile App & SaaS Landing Page Tailwind CSS 4 HTML Template">
+    <meta name="description" content="Habitline is a modern and fully responsive mobile app and SaaS landing page template built with Tailwind CSS 4. Perfect for AI startups, productivity apps, software products, digital platforms, and modern web applications.">
+    
+    <meta name="keywords" content="mobile app template, saas landing page, tailwind css template, ai startup website, app landing page, productivity app template, software website template, startup landing page, web app template, saas html template">
+    
+    <meta name="author" content="Unifato">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <!-- Google Font Link (https://fonts.google.com/) -->
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    
+  <script type="module" crossorigin src="./assets/app.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/app.css">
+</head>
+
+<body class="bg-body-bg">
+
+    <!-- Navbar -->
+    <header>
+        <div class="nav-sticky navbar fixed inset-x-0 top-0 z-120 w-full">
+            <div class="container lg:py-7.5 md:py-5 py-3.5">
+                <div class="flex items-center lg:justify-center justify-between w-full lg:bg-transparent bg-white md:rounded-2xl rounded-lg ">
+                    <div class="lg:p-4 md:py-4 py-1.5 px-3 bg-white min-w-[175px] flex rounded-[20px] lg:shadow-lg">
+                        <a href="index.html">
+                            <img src="./images/logo.svg" alt="" class="md:h-8 h-7.5">
+                        </a>
+                    </div>
+    
+                    <div class="w-full h-2.5 transition-all duration-500 ease-in-out in-[.nav-sticky-on]:w-2.5 lg:flex hidden"></div>
+    
+                    <div class="flex items-center justify-between">
+                        <div class="p-1.5 bg-white rounded-[20px] whitespace-nowrap lg:shadow-lg lg:block hidden">
+                            <ul id="navbar" class="flex items-center">
+                                <li>
+                                    <a href="#features" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#usecase" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Usecase</a>
+                                </li>
+                                <li>
+                                    <a href="#metrics" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Metrics</a>
+                                </li>
+                                <li>
+                                    <a href="#smart-assist" class="flex items-center justify-center text-sm font-medium hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7">Smart Assist</a>
+                                </li>
+    
+                                <!-- Dropdown -->
+                                <li class="hs-dropdown [--trigger:hover] relative inline-flex">
+                                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle flex items-center gap-1 justify-center text-sm hover:bg-default-200 hover:text-default-800 rounded-2xl transition-all py-4 px-7 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none " aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                        Pages
+                                        <i class="iconify lucide--chevron-down size-4"></i>
+                                    </button>
+    
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-44 bg-white rounded-xl mt-2 after:h-4 after:absolute after:-bottom-4 after:inset-s-0 after:w-full before:h-4 before:absolute before:-top-4 before:inset-s-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                                        <div class="p-2.5 space-y-0.5">
+                                            <a href="index.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Home
+                                            </a>
+                                            <a href="about.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                About
+                                            </a>
+                                            <a href="pricing.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Pricing
+                                            </a>
+                                            <a href="contact.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Contact
+                                            </a>
+                                            <a href="waitlist.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Waitlist
+                                            </a>
+                                            <a href="download.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Download
+                                            </a>
+                                            <a href="faqs.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                FAQs
+                                            </a>
+                                            <a href="privacy-policy.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-sm text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                                                Privacy Policy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="w-full h-2.5 transition-all duration-500 ease-in-out in-[.nav-sticky-on]:w-2.5 lg:flex hidden"></div>
+    
+                    <div class="flex items-center gap-1.25 p-1.5 bg-white rounded-[20px] shadow-lg lg:shadow-lg">
+                        <a href="https://www.apple.com/in/app-store/" target="_blank" aria-label="App Store" class="relative flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300 group">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <!-- Default Icon -->
+                                <img src="./images/icons/app-store.svg" alt="Icon" class="md:size-6 size-4.5 transition-transform duration-300 group-hover:-translate-y-6">
+    
+                                <!-- Hover Icon -->
+                                <img src="./images/icons/app-store.svg" alt="Icon" class="absolute md:size-6 size-4.5 translate-y-6 transition-transform duration-300 group-hover:translate-y-0">
+                            </div>
+                        </a>
+    
+                        <a href="https://play.google.com/store/games?device=windows" target="_blank" aria-label="App Store" class="relative flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300 group">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <!-- Default Icon -->
+                                <img src="./images/icons/play-store.svg" alt="Icon" class="md:size-6 size-4.5 transition-transform duration-300 group-hover:-translate-y-6">
+    
+                                <!-- Hover Icon -->
+                                <img src="./images/icons/play-store.svg" alt="Icon" class="absolute md:size-6 size-4.5 translate-y-6 transition-transform duration-300 group-hover:translate-y-0">
+                            </div>
+                        </a>
+    
+                        <div class="flex items-center lg:hidden">
+                            <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-menu" data-hs-overlay="#mobile-menu" class="flex md:h-12.5 md:w-12.5 size-8.75 items-center justify-center overflow-hidden md:rounded-2xl rounded-lg bg-default-200 transition-all duration-300">
+                                <i class="iconify tabler--align-right size-6"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="mobile-menu" class="hs-overlay hs-overlay-open:trandefault-y-0 md:hs-overlay-open:top-24 hs-overlay-open:top-18 hs-overlay-open:opacity-100 [--body-scroll:true] opacity-0 fixed inset-x-0 top-0 z-110 h-50 md:mx-5 mx-4 rounded-lg -trandefault-y-full transform overflow-hidden bg-white shadow-xl transition-all duration-300 hidden" role="dialog" tabindex="-1" aria-labelledby="mobile-menu-label">
+            <div class="flex max-h-50 flex-col overflow-y-auto p-3">
+                <a href="index.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Features
+                </a>
+    
+                <a href="about.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Usecase
+                </a>
+    
+                <a href="services.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Metrics
+                </a>
+    
+                <a href="contact.html" class="group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary">
+                    Features
+                </a>
+    
+                <div class="hs-accordion">
+                    <button type="button" class="hs-accordion-toggle group flex items-center p-1.5 text-base font-medium text-default-600 transition-all hover:text-primary" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                        Pages
+                        <i class="iconify tabler--chevron-down ms-4"></i>
+                    </button>
+    
+                    <div class="hs-accordion-content hidden w-full overflow-hidden ps-5 pb-4 transition-[height]">
+                        <a href="index.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Home
+                        </a>
+                        <a href="about.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            About
+                        </a>
+                        <a href="pricing.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Pricing
+                        </a>
+                        <a href="contact.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Contact
+                        </a>
+                        <a href="waitlist.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Waitlist
+                        </a>
+                        <a href="download.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Download
+                        </a>
+                        <a href="faqs.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            FAQs
+                        </a>
+                        <a href="privacy-policy.html" class="flex items-center gap-x-3.5 py-1.5 px-2.5 rounded-lg text-base text-default-600 hover:text-default-800 hover:bg-default-200 focus:outline-hidden">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Pricing Section -->
+    <section class="lg:pt-50 md:pt-36 pt-32.5">
+        <div class="container">
+            <!-- Title Section -->
+            <div class="lg:mb-20 mb-12 text-center">
+                <span class="inline-block px-5 md:py-1.5 py-1 text-sm font-medium bg-white border border-default-200 text-default-800 rounded-full">
+                    Contact Us
+                </span>
+                
+                <h1 class="my-2.5 lg:text-[90px] md:text-5xl text-4xl font-medium tracking-tight text-default-900">
+                    We're here to help
+                </h1>
+
+                <p class="md:w-lg mx-auto">If you have questions, feedback, or need support, reach out, and we’ll get back to you as soon as we can.</p>
+            </div>
+
+            <div class="overflow-hidden rounded-2xl bg-white shadow-xl md:flex">
+                <!-- Left Side: App Mockup & Decorative Background -->
+                <div class="relative flex items-center justify-center bg-[url('./images/locations/contact-image.webp')] lg:w-2/5 md:w-6/8 md:min-h-125 min-h-90 overflow-hidden md:order-1 order-2!">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <!-- Phone Mockup -->
+                    <img src="./images/workspace/phone-image.png" loading="lazy" alt="Dashboard Image" class="relative z-10 w-full -mb-67 lg:max-w-84 max-w-65 drop-shadow-2xl">
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="lg:p-12.5 md:p-5 py-7.5 px-5 lg:w-3/5 md:order-2 order-1!">
+                    <form id="contact-form" class="md:space-y-8 space-y-3.5">
+                        <!-- Name & Subject Grid -->
+                        <div class="grid grid-cols-1 lg:gap-8 gap-2.5 md:grid-cols-2">
+                            <div class="flex flex-col">
+                                <label for="name" class="mb-2.5 text-sm font-medium text-default-600">Your name*</label>
+                                <input type="text" id="name" name="name" placeholder="Dennis Barrett" required class="w-full rounded-xl bg-default-200/80 px-5 py-4 text-default-800 placeholder:text-default-600 focus:outline-none focus:ring-2 focus:ring-slate-200 transition-all border-none">
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="subject" class="mb-2.5 text-sm font-medium text-default-600">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Topic of your request" class="w-full rounded-xl bg-default-200/80 px-5 py-4 text-default-800 placeholder:text-default-600 focus:outline-none focus:ring-2 focus:ring-slate-200 transition-all border-none">
+                            </div>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="flex flex-col">
+                            <label for="email" class="mb-2.5 text-sm font-medium text-default-600">Email address*</label>
+                            <input type="email" id="email" name="email" placeholder="dannis@example.com" required class="w-full rounded-xl bg-default-200/80 px-5 py-4 text-default-800 placeholder:text-default-600 focus:outline-none focus:ring-2 focus:ring-slate-200 transition-all border-none">
+                        </div>
+
+                        <!-- Message -->
+                        <div class="flex flex-col">
+                            <label for="message" class="mb-2.5 text-sm font-medium text-default-600">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message" class="w-full rounded-xl bg-default-200/80 px-5 py-4 text-default-800 placeholder:text-default-600 focus:outline-none focus:ring-2 focus:ring-slate-200 transition-all border-none resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-4">
+                            <button type="submit" class="rounded-full bg-default-900 px-8 py-4 font-medium text-white shadow-xl transition-all hover:scale-95">
+                                Send message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="lg:py-50 md:py-25 py-20">
+        <div class="container">
+            <div class="md:mb-12.5 mb-8 text-center">
+                <h3 class="lg:text-5xl text-4xl font-medium">Reach us directly</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 grid-cols-1 md:gap-7.5 gap-5 lg:w-3xl mx-auto">
+                <div class="lg:p-7.5 md:p-5 p-3.5 bg-white rounded-2xl shadow-lg group flex flex-col md:text-start text-center justify-end lg:gap-y-12.5 md:gap-y-10 gap-y-3.5">
+                    <div class="md:size-12.5 size-10 flex justify-center items-center rounded-full md:mx-0 mx-auto bg-primary-3">
+                        <i class="iconify lucide--headset text-xl text-white"></i>
+                    </div>
+                    <div>
+                        <h4 class="md:text-2xl text-xl font-medium text-default-900 md:mb-5 mb-2.5">Support Email</h4>
+                        <a href="mailto:support@habitline.app" class="hover:text-default-800 hover:underline underline-offset-4 decoration-2">support@habitline.app</a>
+                    </div>
+                </div>
+
+                <div class="lg:p-7.5 md:p-5 p-3.5 bg-white rounded-2xl shadow-lg group flex flex-col md:text-start text-center justify-end lg:gap-y-12.5 md:gap-y-10 gap-y-3.5">
+                    <div class="md:size-12.5 size-10 flex justify-center items-center rounded-full md:mx-0 mx-auto bg-primary-8">
+                        <i class="iconify lucide--handshake text-xl text-white"></i>
+                    </div>
+                    <div>
+                        <h4 class="md:text-2xl text-xl font-medium text-default-900 md:mb-5 mb-2.5">Business / Partnerships</h4>
+                        <a href="mailto:hello@habitline.app" class="hover:text-default-800 hover:underline underline-offset-4 decoration-2">hello@habitline.app</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:pb-50 md:pb-25">
+        <div class="container">
+            <div class="md:mb-12.5 mb-8 text-center space-y-3.5">
+                <span class="inline-block px-5 py-1.5 text-sm font-medium bg-white border border-default-200 text-default-800 rounded-full">
+                    Common Questions
+                </span>
+
+                <h3 class="lg:text-5xl md:text-4xl text-2xl font-medium">Frequently Asked Questions</h3>
+            </div>
+
+            <div class="hs-accordion-group lg:w-3xl mx-auto space-y-2.5">
+                <!-- Accordion Item 1 (Open by default) -->
+                <div class="hs-accordion active bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300" id="hs-heading-one">
+                    <button class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500" aria-controls="hs-collapse-one">
+                        <h3 class="text-base md:text-xl font-medium">
+                            How many habits can I track?
+                        </h3>
+                        <div class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                            <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                        </div>
+                    </button>
+                    <div id="hs-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-heading-one">
+                        <div class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                            You can track unlimited habits, giving you complete freedom to create and organize.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300" id="hs-heading-two">
+                    <button class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500" aria-controls="hs-collapse-two">
+                        <h3 class="text-base md:text-xl font-medium">
+                            Do reminders work across all devices?
+                        </h3>
+                        <div class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                            <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                        </div>
+                    </button>
+                    <div id="hs-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-heading-two">
+                        <div class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                            Yes. Your reminders sync automatically and trigger on any device where Habitline is installed.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300" id="hs-heading-three">
+                    <button class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500" aria-controls="hs-collapse-three">
+                        <h3 class="text-base md:text-xl font-medium">
+                            What happens if I miss a day?
+                        </h3>
+                        <div class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                            <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                        </div>
+                    </button>
+                    <div id="hs-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-heading-three">
+                        <div class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                            If you miss a day, nothing drastic happens your progress is still saved, and you can pick up right where you left off.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 4 -->
+                <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300" id="hs-heading-four">
+                    <button class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500" aria-controls="hs-collapse-four">
+                        <h3 class="text-base md:text-xl font-medium">
+                            Can I create routines for different times of day?
+                        </h3>
+                        <div class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                            <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                        </div>
+                    </button>
+                    <div id="hs-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-heading-four">
+                        <div class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                            Yes, you can create routines for different times of the day. Organize your habits into morning.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 5 -->
+                <div class="hs-accordion bg-white border border-zinc-100 rounded-2xl shadow-sm hs-accordion-active:shadow-md transition-all duration-300" id="hs-heading-five">
+                    <button class="hs-accordion-toggle hs-accordion-active:text-default-950 inline-flex items-center justify-between w-full lg:p-5 p-3.5 text-start font-bold text-default-900 transition hover:text-zinc-500" aria-controls="hs-collapse-five">
+                        <h3 class="text-base md:text-xl font-medium">
+                            Is Habitline free to use?
+                        </h3>
+                        <div class="hs-accordion-active:rotate-45 relative md:size-8.5 size-6.5 bg-default-200 rounded-full flex items-center justify-center transition-transform duration-300 shrink-0">
+                            <i class="iconify lucide--plus md:size-5 size-3 text-default-800"></i>
+                        </div>
+                    </button>
+                    <div id="hs-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-heading-five">
+                        <div class="lg:px-5 lg:pb-5 px-3.5 pb-3.5 text-zinc-500 md:text-lg text-base md:leading-relaxed leading-normal">
+                            Habitline is free to use with essential features available at no cost. You can track habits, create routines.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body-bg pt-20 lg:pb-7.5 pb-5">
+        <div class="container">
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 lg:gap-32 md:gap-12.5 gap-7.5 md:grid-cols-4 justify-between">
+                <!-- Left Section: Logo & Subscription -->
+                <div class="lg:col-span-2">
+                    <a href="index.html" class="inline-block mb-10">
+                        <img src="./images/logo.svg" alt="Habitline Logo" class="h-11">
+                    </a>
+    
+                    <div class="max-w-xl">
+                        <h2 class="md:text-2xl text-xl mb-2.5 font-medium">Stay on top of your habits</h2>
+                        <p class="mb-5 text-lg text-default-500">No spam. Just simple advice for staying consistent.</p>
+    
+                        <!-- Subscription Form -->
+                        <form class="flex flex-row items-center gap-3 max-w-lg" style="display: flex; flex-direction: row; align-items: center;">
+                            <input type="email" placeholder="Enter your email" required class="rounded-full border border-default-200 bg-default-200 px-5 py-3 text-default-900 placeholder:text-default-400 focus:outline-none text-base transition-all" style="flex: 1; min-width: 0;">
+                            <button type="submit" class="whitespace-nowrap rounded-full bg-default-900 px-7 py-3.5 font-medium text-white transition-all hover:scale-95" style="flex-shrink: 0; min-width: 135px; text-align: center;">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Right Section: Links -->
+                <div>
+                    <h3 class="text-base font-medium text-default-900 lg:mb-7.5 mb-5">Pages links</h3>
+                    <div class="flex flex-col justify-end gap-2">
+                        <a href="index.html" class="mmd:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Home</a>
+                        <a href="about.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">About</a>
+                        <a href="pricing.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Pricing</a>
+                        <a href="contact.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Contact</a>
+                        <a href="waitlist.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Waitlist</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-base font-medium text-default-900 lg:mb-7.5 mb-5">Other links</h3>
+                    <a href="download.html" class=" :text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Download</a>
+                    <a href="faqs.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">FAQs</a>
+                    <a href="privacy-policy.html" class="md:text-lg text-base text-default-600 hover:text-default-900 hover:underline underline-offset-4 decoration-2 transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+    
+            <!-- Bottom Bar -->
+            <div class="lg:mt-16 md:mt-8 mt-6 border-t border-default-200 md:pt-7.5 pt-5 flex flex-col md:flex-row md:justify-between justify-start items-center md:gap-6 gap-5">
+                <p class="text-default-600 md:text-lg text-base">
+                    Develop by <a href="https://unifato.com/" class="text-default-900 font-medium hover:underline">Unifato</a>
+                </p>
+    
+                <!-- Social Icons -->
+                <div class="flex items-center md:justify-end justify-start gap-2.5">
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-instagram size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-instagram size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-x-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-x-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-linkedin-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-linkedin-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="group inline-flex size-9 items-center justify-center overflow-hidden rounded-full bg-default-200">
+                        <div class="relative size-4 overflow-hidden">
+                            <!-- Default Icon -->
+                            <i class="iconify tabler--brand-facebook-filled size-4 text-default-800 absolute inset-0 h-full w-full transition-transform duration-300 group-hover:-translate-y-[200%]"></i>
+    
+                            <i class="iconify tabler--brand-facebook-filled size-4 text-default-800 absolute inset-0 h-full w-full translate-y-[200%] transition-transform duration-300 group-hover:translate-y-0"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+
+
+</body>
+
+</html>

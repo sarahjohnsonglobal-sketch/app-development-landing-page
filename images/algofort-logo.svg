@@ -1,0 +1,12 @@
+<svg width="220" height="38" viewBox="0 0 220 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stylized 'A' with Orange Arrowhead/Triangle -->
+  <g>
+    <!-- Black Outer Inverted-V Legs -->
+    <path d="M16 2 L31 36 H22.5 L16 19 L9.5 36 H1 L16 2Z" fill="#111111"/>
+    <!-- Orange Center Triangle Accent -->
+    <polygon points="16,21 22,36 10,36" fill="#F26522"/>
+  </g>
+
+  <!-- LGOFORT Heavy Typography -->
+  <text x="35" y="34" font-family="'Public Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="33" font-weight="900" letter-spacing="1.2" fill="#111111">LGOFORT</text>
+</svg>

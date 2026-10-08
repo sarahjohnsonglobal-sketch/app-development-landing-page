@@ -1,0 +1,12 @@
+{
+  "name": "algofort-landing-page",
+  "version": "1.0.0",
+  "description": "AlgoFort Landing Page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

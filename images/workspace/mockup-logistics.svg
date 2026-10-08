@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="lBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1035"/>
+    </linearGradient>
+    <filter id="lShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" rx="20" fill="url(#lBgGrad)"/>
+  <circle cx="500" cy="80" r="120" fill="#a855f7" fill-opacity="0.12" filter="blur(40px)"/>
+  <circle cx="100" cy="300" r="140" fill="#6366f1" fill-opacity="0.12" filter="blur(50px)"/>
+
+  <!-- Tablet / Cockpit Device Frame -->
+  <g transform="translate(100, 25)" filter="url(#lShadow)">
+    <rect width="400" height="310" rx="24" fill="#0f172a" stroke="#334155" stroke-width="3"/>
+    <rect x="6" y="6" width="388" height="298" rx="20" fill="#030712"/>
+
+    <!-- Cockpit Header Bar -->
+    <g transform="translate(16, 16)">
+      <rect width="368" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+      <!-- Brand & Hub Name -->
+      <circle cx="16" cy="17" r="7" fill="#a855f7"/>
+      <text x="30" y="21" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="800">LogiFlow</text>
+      <text x="90" y="21" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="500">Global Cockpit v4.2</text>
+      <!-- Live Cloud Tag -->
+      <rect x="250" y="7" width="108" height="20" rx="10" fill="#065f46" stroke="#10b981" stroke-width="0.8"/>
+      <circle cx="260" cy="17" r="3" fill="#34d399"/>
+      <text x="268" y="21" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700">AWS Microservices</text>
+    </g>
+
+    <!-- World Hub Telematics Map -->
+    <g transform="translate(16, 58)">
+      <rect width="368" height="130" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <!-- Grid dots map representation -->
+      <circle cx="70" cy="60" r="16" fill="#38bdf8" fill-opacity="0.2"/>
+      <circle cx="70" cy="60" r="5" fill="#38bdf8"/>
+      <text x="50" y="85" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600">New York</text>
+
+      <circle cx="180" cy="40" r="16" fill="#a855f7" fill-opacity="0.2"/>
+      <circle cx="180" cy="40" r="5" fill="#a855f7"/>
+      <text x="165" y="65" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600">London</text>
+
+      <circle cx="300" cy="70" r="16" fill="#10b981" fill-opacity="0.2"/>
+      <circle cx="300" cy="70" r="5" fill="#10b981"/>
+      <text x="280" y="95" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="600">Singapore</text>
+
+      <!-- Connecting Logistics Route Arcs -->
+      <path d="M70 60 Q125 15, 180 40" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-dasharray="4,3"/>
+      <path d="M180 40 Q240 25, 300 70" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-dasharray="4,3"/>
+
+      <!-- Overlay Telemetry Stats Widget -->
+      <rect x="220" y="8" width="138" height="42" rx="8" fill="#0f172a" fill-opacity="0.9" stroke="#334155" stroke-width="0.8"/>
+      <text x="230" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8" font-weight="600">ACTIVE LOGISTICS FLEET</text>
+      <text x="230" y="42" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="800">10,482 <tspan fill="#34d399" font-size="9">99.8% Online</tspan></text>
+    </g>
+
+    <!-- Bottom Metrics Cockpit Row -->
+    <g transform="translate(16, 198)">
+      <!-- Metric 1: Fuel Saved -->
+      <rect width="116" height="52" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="10" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="600">AI ROUTE SAVING</text>
+      <text x="10" y="40" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800">-32% <tspan font-size="9" fill="#c084fc">Fuel</tspan></text>
+
+      <!-- Metric 2: Uptime -->
+      <g transform="translate(126, 0)">
+        <rect width="116" height="52" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <text x="10" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="600">SLA RELIABILITY</text>
+        <text x="10" y="40" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800">99.98%</text>
+      </g>
+
+      <!-- Metric 3: Fleet Dispatch -->
+      <g transform="translate(252, 0)">
+        <rect width="116" height="52" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+        <text x="10" y="20" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="600">AVG LATENCY</text>
+        <text x="10" y="40" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="800">&lt;18ms</text>
+      </g>
+    </g>
+
+    <!-- Bottom Cockpit Bar -->
+    <g transform="translate(16, 260)">
+      <rect width="368" height="28" rx="8" fill="#581c87" fill-opacity="0.3" stroke="#a855f7" stroke-width="0.8"/>
+      <circle cx="28" cy="14" r="5" fill="#a855f7"/>
+      <text x="40" y="18" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">Next.js • TypeScript • Cloud Telemetry Cockpit</text>
+    </g>
+  </g>
+</svg>

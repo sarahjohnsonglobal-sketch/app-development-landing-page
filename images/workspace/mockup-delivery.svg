@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="dBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140d04"/>
+      <stop offset="50%" stop-color="#211508"/>
+      <stop offset="100%" stop-color="#1a110a"/>
+    </linearGradient>
+    <filter id="dShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" rx="20" fill="url(#dBgGrad)"/>
+  <circle cx="500" cy="80" r="120" fill="#f59e0b" fill-opacity="0.12" filter="blur(40px)"/>
+  <circle cx="100" cy="300" r="140" fill="#ea580c" fill-opacity="0.12" filter="blur(50px)"/>
+
+  <!-- Phone Mockup Container -->
+  <g transform="translate(160, 20)" filter="url(#dShadow)">
+    <rect width="280" height="320" rx="32" fill="#18181b" stroke="#78350f" stroke-width="3"/>
+    <rect x="6" y="6" width="268" height="308" rx="26" fill="#09090b"/>
+
+    <!-- Dynamic Island Notch -->
+    <rect x="95" y="12" width="90" height="18" rx="9" fill="#000000"/>
+    <circle cx="170" cy="21" r="3.5" fill="#f59e0b"/>
+
+    <!-- Status Bar Icons -->
+    <text x="32" y="25" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">9:41</text>
+    <g transform="translate(225, 17)" fill="#a1a1aa">
+      <rect x="0" y="2" width="3" height="6" rx="0.5"/>
+      <rect x="4" y="0" width="3" height="8" rx="0.5"/>
+      <rect x="8" y="-2" width="3" height="10" rx="0.5"/>
+      <rect x="14" y="0" width="14" height="8" rx="2" fill="none" stroke="#a1a1aa" stroke-width="1.2"/>
+      <rect x="16" y="2" width="8" height="4" rx="1" fill="#f59e0b"/>
+    </g>
+
+    <!-- Map & Route View Screen -->
+    <g transform="translate(20, 42)">
+      <!-- Map Background with grid roads -->
+      <rect width="240" height="130" rx="16" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+      <!-- Grid roads -->
+      <line x1="20" y1="40" x2="220" y2="40" stroke="#27272a" stroke-width="4"/>
+      <line x1="20" y1="90" x2="220" y2="90" stroke="#27272a" stroke-width="4"/>
+      <line x1="70" y1="10" x2="70" y2="120" stroke="#27272a" stroke-width="4"/>
+      <line x1="170" y1="10" x2="170" y2="120" stroke="#27272a" stroke-width="4"/>
+
+      <!-- Glowing Route Polyline -->
+      <path d="M40 40 L70 40 L70 90 L170 90 L170 60 L200 60" fill="none" stroke="#3b82f6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Store Pin -->
+      <circle cx="40" cy="40" r="7" fill="#10b981"/>
+      <circle cx="40" cy="40" r="3" fill="#ffffff"/>
+
+      <!-- Courier Moving Dot -->
+      <circle cx="120" cy="90" r="10" fill="#f59e0b" fill-opacity="0.3"/>
+      <circle cx="120" cy="90" r="6" fill="#f59e0b"/>
+      <circle cx="120" cy="90" r="2.5" fill="#ffffff"/>
+
+      <!-- Destination Pin -->
+      <path d="M200 48 C195 48 191 52 191 57 C191 64 200 72 200 72 C200 72 209 64 209 57 C209 52 205 48 200 48 Z" fill="#ef4444"/>
+      <circle cx="200" cy="56" r="2.5" fill="#ffffff"/>
+
+      <!-- ETA Pill on Map -->
+      <rect x="75" y="16" width="90" height="20" rx="10" fill="#000000" fill-opacity="0.8" stroke="#f59e0b" stroke-width="0.8"/>
+      <text x="85" y="30" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700">⚡ ETA: 6 Mins</text>
+    </g>
+
+    <!-- Rider & Order Detail Card -->
+    <g transform="translate(20, 180)">
+      <rect width="240" height="80" rx="14" fill="#1c1917" stroke="#44403c" stroke-width="0.8"/>
+      <!-- Courier Avatar -->
+      <circle cx="34" cy="32" r="16" fill="#ea580c"/>
+      <path d="M34 24 A 4 4 0 1 0 34 32 A 4 4 0 1 0 34 24 Z M26 40 C26 35 42 35 42 40 Z" fill="#ffffff"/>
+
+      <!-- Rider Info -->
+      <text x="60" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Courier: Alex R.</text>
+      <text x="60" y="42" fill="#a8a29e" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="500">Order #SC-8921 • In Transit</text>
+
+      <!-- Rating Badge -->
+      <rect x="180" y="20" width="46" height="18" rx="9" fill="#292524" stroke="#78716c" stroke-width="0.6"/>
+      <text x="188" y="32" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9" font-weight="700">★ 4.9</text>
+
+      <!-- Delivery Item summary pills -->
+      <rect x="16" y="54" width="96" height="18" rx="6" fill="#292524"/>
+      <text x="24" y="66" fill="#d6d3d1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="600">🥦 Fresh Organic</text>
+
+      <rect x="120" y="54" width="106" height="18" rx="6" fill="#292524"/>
+      <text x="128" y="66" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="8.5" font-weight="600">✓ Paid via Apple Pay</text>
+    </g>
+
+    <!-- Bottom GPS Tag -->
+    <g transform="translate(20, 270)">
+      <rect width="240" height="28" rx="8" fill="#c2410c" fill-opacity="0.3" stroke="#f97316" stroke-width="0.8"/>
+      <circle cx="34" cy="14" r="5" fill="#f97316"/>
+      <text x="46" y="18" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="600">Hyperlocal Live GPS Tracking</text>
+    </g>
+  </g>
+</svg>
