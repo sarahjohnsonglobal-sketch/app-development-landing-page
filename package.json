@@ -4,7 +4,6 @@
   "description": "AlgoFort Landing Page",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js",
-    "build": "echo 'Static build'"
+    "dev": "node server.js"
   }
 }
